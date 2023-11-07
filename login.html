@@ -3,36 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link href="login.css" rel="stylesheet" />
+
     <title>LOGIN Person Management Data</title>
   </head>
   <body>
-    <!-- logo untuk person management app -->
-    <p class="heading-primary">PERMAP-PERSON MANAGEMENT APP</p>
-    <p class="logo-description">Masuk Ke Halaman Administrasi</p>
-    <form class="login-form" action="#">
-      <div>
-        <label for="email">Email</label>
-        <input
-          id="email"
-          name="email"
-          type="email"
-          placeholder="Email"
-          required
-        />
-      </div>
+    <main>
+      <section class="login-section">
+        <div class="container">
+          <div class="login">
+            <div class="login-img">
+              <!-- logo untuk person management app -->
+            </div>
+            <div class="login-text">
+              <h1 class="heading-primary">
+                <span>PERMAP</span> - Person Management App
+              </h1>
+              <h2 class="heading-secondary logo-description">
+                Masuk Ke Halaman Administrasi
+              </h2>
+              <form class="login-form" action="#">
+                <div>
+                  <label for="email"
+                    >Email
+                    <ion-icon class="form-icon" name="mail-outline"></ion-icon
+                  ></label>
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    required
+                  />
+                </div>
 
-      <div>
-        <label for="password">Password</label>
-        <input
-          id="password"
-          name="password"
-          type="password"
-          placeholder="Password"
-          required
-        />
-      </div>
+                <div>
+                  <label for="password"
+                    >Password
+                    <ion-icon
+                      class="form-icon"
+                      name="lock-closed-outline"
+                    ></ion-icon
+                  ></label>
+                  <input
+                    id="password"
+                    name="password"
+                    type="password"
+                    placeholder="Password"
+                    required
+                  />
+                </div>
 
-      <button ty class="login-btn">Login</button>
-    </form>
+                <button class="login-btn">Login</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
