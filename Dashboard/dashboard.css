@@ -1,0 +1,112 @@
+.header-section {
+  background-color: #8f00ff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 1.2rem;
+}
+
+.logo-box {
+  display: flex;
+}
+
+.logo-box .heading-primary {
+  margin: 0;
+}
+
+.user-box {
+  display: flex;
+  align-items: center;
+  /* gap: 1rem;
+  font-size: 1.8rem; */
+  font-weight: 600;
+}
+
+.user-icon {
+  font-size: 4.4rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.main-nav {
+  position: absolute;
+  background-color: #330066;
+  background-image: linear-gradient(
+    rgba(51, 0, 102, 0.855) 0%,
+    rgba(111, 0, 255, 0.966) 50%,
+    rgba(191, 0, 255, 0.932) 100%
+  );
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* opacity: 0; */
+}
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+  text-align: center;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #f4f1fb;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #ffba00;
+}
+
+.main-nav-link.cta:link,
+.main-nav-link.cta:visited {
+  background-color: #800020;
+  padding: 1.6rem;
+  border-radius: 9px;
+}
+
+/* ***************************** */
+/* DASHBOARD SECTION */
+/* ***************************** */
+.dashboard-section {
+  background-color: #330066;
+}
+
+.dashboard-menu {
+  /* display: flex;
+  justify-content: space-between; */
+  padding: 3.2rem;
+}
+
+.menu-item {
+  display: inline-block;
+  padding: 4.4rem 3.2rem;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.menu-1 {
+  background-color: #ddb3ff;
+  color: #f4f1fb;
+}
+
+.menu-2 {
+  background-color: #e2ccff;
+}

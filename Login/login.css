@@ -1,58 +1,25 @@
-/* Primary color : #8f00ff */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 50%;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  line-height: 1;
-  color: #fff;
-
-  /* ini akan bekerja jika tida ada absolute position terhadap relasi ke elemen body */
-  overflow-x: hidden;
-}
-
-.container {
-  max-width: 576px;
-  padding: 0 3.2rem;
-  margin: 0 auto;
-}
-
-.heading-primary {
-  font-size: 3.4rem;
-  line-height: 1.05;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  margin-bottom: 2.4rem;
-}
-
-.heading-secondary {
-  font-size: 1.8rem;
-  font-weight: 600;
-  margin-bottom: 1.6rem;
-  letter-spacing: 1.2px;
-  line-height: 1.2;
-}
-
 /* ***************************** */
 /* LOGIN SECTION */
 /* ***************************** */
 .login-section {
   background-color: #4e00b3;
   /* background-color: #6b34da; */
-  /* background-image: linear-gradient(#8c33ff #6f00ff); */
+  /* background: linear-gradient(to right #8c33ff #6f00ff); */
+  background-image: linear-gradient(
+    rgba(111, 0, 255, 0.966) 0%,
+    rgba(191, 0, 255, 0.932) 100%
+  );
+}
+
+.login-form {
+  padding: 3.2rem;
 }
 
 .login {
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 3.4rem;
+  /* height: 100vh; */
   background-image: linear-gradient(#fff #6f00ff);
   padding: 9.6rem 0;
 }
@@ -76,7 +43,7 @@ body {
 
 .login label {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
 }
@@ -121,4 +88,12 @@ body {
 .login *:focus {
   outline: none;
   box-shadow: 0 0 0 0.5rem rgba(66, 0, 153, 0.788);
+}
+
+.login-img {
+  display: block;
+  width: 100%;
+  border-radius: 50%;
+  border: 7px solid #f7b801;
+  box-shadow: 0 0.2rem 0.7rem rgba(245, 180, 15, 0.604);
 }
