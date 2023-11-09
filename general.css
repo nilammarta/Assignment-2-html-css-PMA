@@ -20,11 +20,11 @@ body {
   overflow-x: hidden;
 }
 
-.container {
+/* .container {
   max-width: 576px;
   padding: 0 3.2rem;
   margin: 0 auto;
-}
+} */
 
 .heading-primary {
   font-size: 3rem;
