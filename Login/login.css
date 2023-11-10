@@ -2,7 +2,7 @@
 /* LOGIN SECTION */
 /* ***************************** */
 .login-section {
-  /* background: linear-gradient(to right #8c33ff #6f00ff); */
+  /* background-color: #fff; */
   background-image: linear-gradient(
     rgba(111, 0, 255, 0.966) 0%,
     rgba(191, 0, 255, 0.932) 100%
@@ -35,6 +35,7 @@
   padding: 3.2rem;
   border-radius: 11px;
   text-align: center;
+  box-shadow: 0 0.2rem 0.7rem rgba(245, 180, 15, 0.604);
 }
 
 .heading-primary span {
@@ -76,6 +77,12 @@
   font-weight: 700;
 }
 
+.question {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: end;
+}
+
 .login-btn {
   font-size: 1.8rem;
   font-weight: 700;
@@ -97,7 +104,7 @@
 .login-img {
   display: block;
   width: 100%;
-  border-radius: 50%;
-  border: 7px solid #f7b801;
-  box-shadow: 0 0.2rem 0.7rem rgba(245, 180, 15, 0.604);
+  border-radius: 11px;
+  /* border: 7px solid #f7b801; */
+  /* box-shadow: 0 0.2rem 0.7rem rgba(245, 180, 15, 0.604); */
 }

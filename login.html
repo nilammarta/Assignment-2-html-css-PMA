@@ -26,8 +26,8 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <link href="../general.css" rel="stylesheet" />
-    <link href="login.css" rel="stylesheet" />
+    <link href="general.css" rel="stylesheet" />
+    <link href="Login/login.css" rel="stylesheet" />
 
     <title>LOGIN - Person Management Data</title>
   </head>
@@ -36,7 +36,7 @@
       <section
         class="login-section d-flex flex-row align-items-center justify-content-center"
       >
-        <div class="container-sm">
+        <div class="container">
           <div class="login">
             <div class="row gy-5 gx-5 align-self-center">
               <div class="col-12 col-lg-6 align-self-center">
@@ -48,7 +48,7 @@
                     Masuk Ke Halaman Administrasi
                   </h2>
                   <form class="login-form" action="#">
-                    <div>
+                    <div class="mb-3">
                       <label for="email"
                         >Email
                         <ion-icon
@@ -56,16 +56,19 @@
                           name="mail-outline"
                         ></ion-icon
                       ></label>
+                      <!-- <div class="col-10"> -->
                       <input
+                        class="form-control"
                         id="email"
                         name="email"
                         type="email"
                         placeholder="Email"
                         required
                       />
+                      <!-- </div> -->
                     </div>
 
-                    <div>
+                    <div class="mb-3">
                       <label for="password"
                         >Password
                         <ion-icon
@@ -74,6 +77,7 @@
                         ></ion-icon
                       ></label>
                       <input
+                        class="form-contol"
                         id="password"
                         name="password"
                         type="password"
@@ -81,18 +85,20 @@
                         required
                       />
                     </div>
-
-                    <button class="login-btn">Login</button>
+                    <div>
+                      <p class="question">Forget password?</p>
+                    </div>
+                    <button class="login-btn btn-primary">Login</button>
                   </form>
                 </div>
               </div>
 
-              <div class="col-12 col-lg-6 align-self-center">
+              <div class="col-12 col-lg-6 align-self-center d-none d-lg-flex">
                 <div class="login-img-box">
                   <!-- logo untuk person management app -->
                   <img
                     class="login-img"
-                    src="../Img/permap-1.avif"
+                    src="Img/permap-1.avif"
                     alt="Person Management App logo"
                   />
                 </div>
