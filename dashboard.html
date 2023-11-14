@@ -37,9 +37,7 @@
       <div class="header">
         <div class="d-flex justify-content-between align-items-center">
           <div class="logo-box">
-            <!-- <a href="#"><img class="logo-img" src="" /></a>  (untuk gambar logo)-->
             <h1 class="heading-primary">PERMAP</h1>
-            <!-- </div> -->
           </div>
 
           <div class="d-flex justify-content-end align-items-center">
@@ -51,15 +49,12 @@
                 data-bs-target="#offcanvasScrolling"
                 aria-controls="offcanvasScrolling"
               >
-                <ion-icon
-                  class="icon-mobile-nav"
-                  name="menu-outline"
-                ></ion-icon>
+                <ion-icon class="icon-menu" name="menu-outline"></ion-icon>
               </button>
 
               <!-- Side Bar -->
               <div
-                class="offcanvas offcanvas-start offcanvas-width"
+                class="offcanvas offcanvas-start"
                 data-bs-scroll="true"
                 data-bs-backdrop="false"
                 tabindex="-1"
@@ -68,7 +63,7 @@
               >
                 <div class="offcanvas-header">
                   <h5
-                    class="offcanvas-title heading-primary header"
+                    class="offcanvas-title heading-primary"
                     id="offcanvasScrollingLabel"
                   >
                     PERMAP
@@ -81,7 +76,9 @@
                     <ion-icon class="icon-header" name="close"></ion-icon>
                   </button>
                 </div>
-                <div class="offcanvas-body side-bar">
+                <div
+                  class="offcanvas-body d-flex flex-column justify-content-between"
+                >
                   <nav class="main-nav">
                     <ul class="main-nav-list">
                       <li class="nav-item nav-open">
@@ -102,94 +99,171 @@
                           Persons</a
                         >
                       </li>
-                      <li class="nav-item">
-                        <a class="main-nav-link" href="#"
-                          ><ion-icon
-                            name="person-circle-outline"
-                            class="nav-icon"
-                          ></ion-icon>
-                          My Profile</a
-                        >
-                      </li>
-                      <li class="nav-item">
-                        <a class="main-nav-link cta py-4 px-5" href="#"
-                          ><ion-icon
-                            name="log-out-outline"
-                            class="nav-icon"
-                          ></ion-icon>
-                          Logout</a
-                        >
-                      </li>
                     </ul>
                   </nav>
+
+                  <div class="profile">
+                    <h2 class="account">Account</h2>
+                    <nav class="main-nav">
+                      <ul class="main-nav-list">
+                        <li class="nav-item">
+                          <a class="main-nav-link" href="#"
+                            ><ion-icon
+                              name="person-circle-outline"
+                              class="nav-icon"
+                            ></ion-icon>
+                            Edit Profile</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="main-nav-link cta" href="#"
+                            ><ion-icon
+                              name="log-out-outline"
+                              class="nav-icon"
+                            ></ion-icon>
+                            Logout</a
+                          >
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
                 </div>
               </div>
             </div>
 
-            <!-- <div class="col-1 col-md-1 col-lg-4 d-flex justify-content-end"> -->
-            <!-- <div class="row">
-              <div class="col-3"> -->
             <div class="user-box">
               <a href="#">
                 <ion-icon
-                  class="user-icon"
+                  class="user-icon btn-header"
                   name="person-circle-outline"
                 ></ion-icon
               ></a>
             </div>
-            <!-- </div> -->
             <div class="d-none d-lg-block">
-              <a class="user-email" href="#"> </ion-icon>lalagemoy@gmail.com </a>
+              <a class="user-email btn-header" href="#">lalagemoy@gmail.com </a>
             </div>
-            <!-- </div> -->
           </div>
         </div>
       </div>
     </header>
+
     <main>
       <section class="dashboard-section">
-        
-        <!-- <nav class="main-nav">
-          <ul class="main-nav-list">
-            <li class="nav-item nav-open">
-              <a class="main-nav-link" href="#"
-                ><ion-icon
-                  name="file-tray-full-outline"
-                  class="nav-icon"
-                ></ion-icon>
-                Dashboard</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="main-nav-link" href="#"
-                ><ion-icon
-                  name="people-outline"
-                  class="nav-icon"
-                ></ion-icon>
-                Persons</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="main-nav-link" href="#"
-                ><ion-icon
-                  name="person-circle-outline"
-                  class="nav-icon"
-                ></ion-icon>
-                My Profile</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="main-nav-link cta py-4 px-5" href="#"
-                ><ion-icon
-                  name="log-out-outline"
-                  class="nav-icon"
-                ></ion-icon>
-                Logout</a
-              >
-            </li>
-          </ul>
-        </nav>   -->
-    
+        <div class="row">
+          <div class="col-lg-3 col-xl-2">
+            <div class="sidebar d-none d-lg-flex flex-column col-3 col-xl-2">
+              <nav class="main-nav">
+                <ul class="main-nav-list">
+                  <li class="nav-item nav-open">
+                    <a class="main-nav-link" href="#"
+                      ><ion-icon
+                        name="file-tray-full-outline"
+                        class="nav-icon"
+                      ></ion-icon>
+                      Dashboard</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="main-nav-link" href="#"
+                      ><ion-icon
+                        name="people-outline"
+                        class="nav-icon"
+                      ></ion-icon>
+                      Persons</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+
+              <div class="profile">
+                <h2 class="heading-secondary sub-heading">Account</h2>
+                <nav class="main-nav">
+                  <ul class="main-nav-list">
+                    <li class="nav-item">
+                      <a class="main-nav-link" href="#"
+                        ><ion-icon
+                          name="person-circle-outline"
+                          class="nav-icon"
+                        ></ion-icon>
+                        Edit Profile</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="main-nav-link cta" href="#"
+                        ><ion-icon
+                          name="log-out-outline"
+                          class="nav-icon"
+                        ></ion-icon>
+                        Logout</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-9 col-xl-10">
+            <div class="dashboard m-5">
+              <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand p-4">Persons</a>
+                  <form class="d-flex" role="search">
+                    <input
+                      class="form-control me-2"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <button class="btn btn-search" type="submit">
+                      <ion-icon name="search-outline"></ion-icon>
+                    </button>
+                  </form>
+                </div>
+              </nav>
+
+              <button class="table-btn btn-add p-3 m-4">
+                <ion-icon
+                  class="add-icon me-2"
+                  name="person-add-outline"
+                ></ion-icon
+                >Add new person
+              </button>
+
+              <div class="table-data container">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td colspan="2">Larry the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <script
