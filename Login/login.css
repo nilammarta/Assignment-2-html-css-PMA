@@ -96,6 +96,11 @@
   margin: 2rem 3.2rem 0 3.2rem;
 }
 
+.login-btn:hover {
+  background-color: #2c0066;
+  color: #f4f1fb;
+}
+
 .login *:focus {
   outline: none;
   box-shadow: 0 0 0 0.5rem rgba(66, 0, 153, 0.788);

@@ -105,7 +105,6 @@
 
 .offcanvas-title {
   color: #fff;
-  margin: 0;
 }
 
 .btn--close {
@@ -121,7 +120,7 @@
   letter-spacing: 0.3rem;
   padding: 0 1.2rem;
   text-transform: uppercase;
-  margin: 0;
+  padding-left: 3.5rem;
 }
 
 /* ***************************** */
@@ -146,20 +145,20 @@
 }
 
 /* DASHBOARD */
-/* .dashboard {
-  box-shadow: 0.5px 0.5px 0.5px #999;
-} */
-
 .navbar *:focus {
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(66, 0, 153, 0.788);
 }
 
 .navbar-brand {
-  font-size: 2.4rem;
   font-weight: 600;
-  color: #495057;
+  color: #343a40;
   text-transform: uppercase;
+}
+
+.navbar-brand:hover,
+.navbar-brand:active {
+  color: #343a40;
 }
 
 .dashboard input,
@@ -174,12 +173,16 @@
   color: #fff;
 }
 
+.btn-search:hover {
+  background-color: #6600cc;
+}
+
 .btn-add {
   font-size: 1.8rem;
   font-weight: 600;
   border: none;
   border-radius: 9px;
-  background-color: #03c03c;
+  background-color: #6600cc;
   color: #fff;
 }
 
@@ -187,4 +190,39 @@
   height: 2rem;
   width: 2.4rem;
   font-weight: 700;
+}
+
+/* TABLE */
+.table > :not(caption) > * > * {
+  padding: 1.6rem 0.8rem;
+  color: #444;
+}
+
+.table > tbody {
+  vertical-align: baseline;
+}
+
+thead {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+
+tbody {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.btn-table {
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem;
+  background-color: #d4c6f1;
+  color: #6600cc;
+  border: 1px solid #a966ff;
+}
+
+.btn-table:hover {
+  background-color: #2c0066;
+  border: 1px solid #a966ff;
+  color: #fff;
 }

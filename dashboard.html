@@ -63,7 +63,7 @@
               >
                 <div class="offcanvas-header">
                   <h5
-                    class="offcanvas-title heading-primary"
+                    class="offcanvas-title heading-primary m-0"
                     id="offcanvasScrollingLabel"
                   >
                     PERMAP
@@ -76,9 +76,7 @@
                     <ion-icon class="icon-header" name="close"></ion-icon>
                   </button>
                 </div>
-                <div
-                  class="offcanvas-body d-flex flex-column justify-content-between"
-                >
+                <div class="offcanvas-body d-flex flex-column gap-5">
                   <nav class="main-nav">
                     <ul class="main-nav-list">
                       <li class="nav-item nav-open">
@@ -103,7 +101,7 @@
                   </nav>
 
                   <div class="profile">
-                    <h2 class="account">Account</h2>
+                    <h2 class="heading-secondary sub-heading m-0">Account</h2>
                     <nav class="main-nav">
                       <ul class="main-nav-list">
                         <li class="nav-item">
@@ -132,15 +130,13 @@
             </div>
 
             <div class="user-box">
-              <a href="#">
-                <ion-icon
-                  class="user-icon btn-header"
-                  name="person-circle-outline"
-                ></ion-icon
-              ></a>
+              <ion-icon
+                class="user-icon btn-header"
+                name="person-circle-outline"
+              ></ion-icon>
             </div>
             <div class="d-none d-lg-block">
-              <a class="user-email btn-header" href="#">lalagemoy@gmail.com </a>
+              <div class="user-email btn-header">lalagemoy@gmail.com</div>
             </div>
           </div>
         </div>
@@ -149,9 +145,11 @@
 
     <main>
       <section class="dashboard-section">
-        <div class="row">
+        <div class="row justify-content-center">
           <div class="col-lg-3 col-xl-2">
-            <div class="sidebar d-none d-lg-flex flex-column col-3 col-xl-2">
+            <div
+              class="sidebar d-none d-lg-flex flex-column col-lg-3 col-xl-2 gap-5"
+            >
               <nav class="main-nav">
                 <ul class="main-nav-list">
                   <li class="nav-item nav-open">
@@ -176,7 +174,7 @@
               </nav>
 
               <div class="profile">
-                <h2 class="heading-secondary sub-heading">Account</h2>
+                <h2 class="heading-secondary sub-heading m-0">Account</h2>
                 <nav class="main-nav">
                   <ul class="main-nav-list">
                     <li class="nav-item">
@@ -203,11 +201,11 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-9 col-xl-10">
-            <div class="dashboard m-5">
+          <div class="col-12 col-lg-9 col-xl-9">
+            <div class="dashboard m-3 m-md-5">
               <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
-                  <a class="navbar-brand p-4">Persons</a>
+                  <h1 class="navbar-brand heading-primary m-0 p-4">Persons</h1>
                   <form class="d-flex" role="search">
                     <input
                       class="form-control me-2"
@@ -222,41 +220,140 @@
                 </div>
               </nav>
 
-              <button class="table-btn btn-add p-3 m-4">
-                <ion-icon
-                  class="add-icon me-2"
-                  name="person-add-outline"
-                ></ion-icon
-                >Add new person
-              </button>
+              <div class="d-flex justify-content-end">
+                <button class="table-btn btn-add p-3 m-4">
+                  <ion-icon class="add-icon me-2" name="person-add"></ion-icon>
+                  Add
+                </button>
+              </div>
 
-              <div class="table-data container">
-                <table class="table">
+              <div class="table-data mt-5">
+                <table class="table table-hover">
                   <thead>
                     <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
+                      <th scope="col">No</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Nama</th>
+                      <th scope="col" colspan="2">Role</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row">1</th>
-                      <td>Mark</td>
-                      <td>Otto</td>
-                      <td>@mdo</td>
+                      <td scope="row">1</td>
+                      <td>lalalulu@gmail.com</td>
+                      <td>Lala Lulu</td>
+                      <td>ADMIN</td>
+                      <td>
+                        <div
+                          class="d-grid gap-2 d-sm-flex justify-content-md-end"
+                        >
+                          <button
+                            class="btn btn-outline-light me-md-2 btn-table"
+                            type="button"
+                          >
+                            View
+                          </button>
+                          <button
+                            class="btn btn-outline-light btn-table"
+                            type="button"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">2</th>
-                      <td>Jacob</td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
+                      <td scope="row">2</td>
+                      <td>jacob@gmail.com</td>
+                      <td>Thornton Jcob</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div
+                          class="d-grid gap-2 d-sm-flex justify-content-md-end"
+                        >
+                          <button
+                            class="btn btn-outline-light me-md-2 btn-table"
+                            type="button"
+                          >
+                            View
+                          </button>
+                          <button
+                            class="btn btn-outline-light btn-table"
+                            type="button"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </td>
                     </tr>
                     <tr>
-                      <th scope="row">3</th>
-                      <td colspan="2">Larry the Bird</td>
-                      <td>@twitter</td>
+                      <td scope="row">3</td>
+                      <td>larry@gmail.com</td>
+                      <td>Larry Laura</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div
+                          class="d-grid gap-2 d-sm-flex justify-content-md-end"
+                        >
+                          <button
+                            class="btn btn-outline-light me-md-2 btn-table"
+                            type="button"
+                          >
+                            View
+                          </button>
+                          <button
+                            class="btn btn-outline-light btn-table"
+                            type="button"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">4</td>
+                      <td>yura@gmail.com</td>
+                      <td>Yura Lala</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div
+                          class="d-grid gap-2 d-sm-flex justify-content-md-end"
+                        >
+                          <button
+                            class="btn btn-outline-light me-md-2 btn-table"
+                            type="button"
+                          >
+                            View
+                          </button>
+                          <button
+                            class="btn btn-outline-light btn-table"
+                            type="button"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">5</td>
+                      <td>kuki@gmail.com</td>
+                      <td>Kuka Kuki</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div
+                          class="d-grid gap-2 d-sm-flex justify-content-md-end"
+                        >
+                          <button
+                            class="btn btn-light me-md-2 btn-table"
+                            type="button"
+                          >
+                            View
+                          </button>
+                          <button class="btn btn-light btn-table" type="button">
+                            Edit
+                          </button>
+                        </div>
+                      </td>
                     </tr>
                   </tbody>
                 </table>
