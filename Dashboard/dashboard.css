@@ -24,10 +24,6 @@
   color: #8100e6;
 }
 
-.logo-box .heading-primary {
-  margin: 0;
-}
-
 .user-box {
   font-weight: 600;
 }
@@ -136,12 +132,17 @@
 
 /* SIDE BAR */
 .sidebar {
+  width: 310px;
   background-color: #8f00ff;
-  position: fixed;
+  /* position: fixed;
   top: 72px;
   bottom: 0;
-  left: 0;
+  left: 0; */
   box-shadow: 0.5px 0 8px #555;
+}
+
+.dashboard-content {
+  width: 100%;
 }
 
 /* DASHBOARD */
@@ -196,15 +197,19 @@
 .table > :not(caption) > * > * {
   padding: 1.6rem 0.8rem;
   color: #444;
+  background: none;
 }
 
-.table > tbody {
+.table {
+  min-width: 600px;
   vertical-align: baseline;
+  border: 0.01px solid #bdbcbc99;
 }
 
 thead {
   font-size: 1.8rem;
   text-transform: uppercase;
+  background-color: #f4f1fb;
 }
 
 tbody {
@@ -215,7 +220,7 @@ tbody {
 .btn-table {
   font-size: 1.6rem;
   font-weight: 500;
-  padding: 1rem;
+  padding: 1rem 2rem;
   background-color: #d4c6f1;
   color: #6600cc;
   border: 1px solid #a966ff;
