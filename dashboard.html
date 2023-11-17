@@ -27,8 +27,8 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 
-    <link href="general.css" rel="stylesheet" />
-    <link href="Dashboard/dashboard.css" rel="stylesheet" />
+    <link href="CSS/general.css" rel="stylesheet" />
+    <link href="CSS/dashboard.css" rel="stylesheet" />
 
     <title>DASHBOARD - Person Management App</title>
   </head>
@@ -142,225 +142,158 @@
         </div>
       </div>
     </header>
-
     <main>
-      <section class="dashboard-section">
-        <div class="row justify-content-center">
-          <div class="col-lg-3 col-xl-2">
-            <div
-              class="sidebar d-none d-lg-flex flex-column col-lg-3 col-xl-2 gap-5"
-            >
+      <section class="main-section d-flex flex-row">
+        <div class="sidebar d-none d-lg-flex flex-column gap-5">
+          <div class="sidebar-content">
+            <nav class="main-nav">
+              <ul class="main-nav-list">
+                <li class="nav-item nav-open">
+                  <a class="main-nav-link" href="#"
+                    ><ion-icon
+                      name="file-tray-full-outline"
+                      class="nav-icon"
+                    ></ion-icon>
+                    Dashboard</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="main-nav-link" href="#"
+                    ><ion-icon
+                      name="people-outline"
+                      class="nav-icon"
+                    ></ion-icon>
+                    Persons</a
+                  >
+                </li>
+              </ul>
+            </nav>
+
+            <div class="profile">
+              <h2 class="heading-secondary sub-heading m-0">Account</h2>
               <nav class="main-nav">
                 <ul class="main-nav-list">
-                  <li class="nav-item nav-open">
-                    <a class="main-nav-link" href="#"
-                      ><ion-icon
-                        name="file-tray-full-outline"
-                        class="nav-icon"
-                      ></ion-icon>
-                      Dashboard</a
-                    >
-                  </li>
                   <li class="nav-item">
                     <a class="main-nav-link" href="#"
                       ><ion-icon
-                        name="people-outline"
+                        name="person-circle-outline"
                         class="nav-icon"
                       ></ion-icon>
-                      Persons</a
+                      My Profile</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="main-nav-link cta" href="#"
+                      ><ion-icon
+                        name="log-out-outline"
+                        class="nav-icon"
+                      ></ion-icon>
+                      Logout</a
                     >
                   </li>
                 </ul>
               </nav>
-
-              <div class="profile">
-                <h2 class="heading-secondary sub-heading m-0">Account</h2>
-                <nav class="main-nav">
-                  <ul class="main-nav-list">
-                    <li class="nav-item">
-                      <a class="main-nav-link" href="#"
-                        ><ion-icon
-                          name="person-circle-outline"
-                          class="nav-icon"
-                        ></ion-icon>
-                        My Profile</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a class="main-nav-link cta" href="#"
-                        ><ion-icon
-                          name="log-out-outline"
-                          class="nav-icon"
-                        ></ion-icon>
-                        Logout</a
-                      >
-                    </li>
-                  </ul>
-                </nav>
-              </div>
             </div>
           </div>
+        </div>
 
-          <div class="col-12 col-lg-9 col-xl-10">
-            <div class="dashboard m-3 m-md-5">
-              <nav class="navbar bg-body-tertiary">
-                <div class="container-fluid">
-                  <h1 class="navbar-brand heading-primary m-0 p-4">Persons</h1>
-                  <form class="d-flex" role="search">
-                    <input
-                      class="form-control me-2"
-                      type="search"
-                      placeholder="Search"
-                      aria-label="Search"
-                    />
-                    <button class="btn btn-search" type="submit">
-                      <ion-icon name="search-outline"></ion-icon>
-                    </button>
-                  </form>
+        <div class="main-content">
+          <div class="dashboard m-3 m-md-5">
+            <h1 class="heading-primary m-0 ps-3 dashboard-title">DASHBOARD</h1>
+            <p class="heading-secondary ps-3 dashboard-description">
+              Hi Lala Lulu!, Welcome in Dashboard
+            </p>
+            <div class="widget mt-5">
+              <div class="row row-gap-4">
+                <div class="col-6 col-md-4">
+                  <div class="card card-1" style="width: 100%">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        <ion-icon class="card-icon" name="people"></ion-icon>
+                        130
+                      </h3>
+                      <h4 class="card-subtitle mb-2">Persons</h4>
+                      <p class="card-text">Last update: 2 january 2024</p>
+                      <!-- <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                  </div>
                 </div>
-              </nav>
+                <div class="col-6 col-md-4">
+                  <div class="card card-2" style="width: 100%">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        <ion-icon
+                          class="card-icon"
+                          name="accessibility"
+                        ></ion-icon>
+                        110
+                      </h3>
+                      <h4 class="card-subtitle mb-2">In Productive Ages</h4>
 
-              <div class="d-flex justify-content-end">
-                <button class="table-btn btn-add p-3 m-4">
-                  <ion-icon class="add-icon me-2" name="person-add"></ion-icon>
-                  Add
-                </button>
-              </div>
+                      <p class="card-text">Last update: 2 january 2024</p>
+                      <!-- <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="card card-3" style="width: 100%">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        <ion-icon class="card-icon" name="man"></ion-icon>
+                        20
+                      </h3>
+                      <h4 class="card-subtitle mb-2">Pased Away</h4>
 
-              <div class="table-data mt-5">
-                <div class="table-responsive">
-                  <table class="table table-hover">
-                    <thead>
-                      <tr>
-                        <th scope="col">No</th>
-                        <th scope="col">Email</th>
-                        <th scope="col">Nama</th>
-                        <th scope="col" colspan="2">Role</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td scope="row">1</td>
-                        <td>lalalulu@gmail.com</td>
-                        <td>Lala Lulu</td>
-                        <td>ADMIN</td>
-                        <td>
-                          <div
-                            class="d-grid gap-2 d-flex justify-content-md-end"
-                          >
-                            <button
-                              class="btn btn-outline-light me-md-2 btn-table"
-                              type="button"
-                            >
-                              View
-                            </button>
-                            <button
-                              class="btn btn-outline-light btn-table"
-                              type="button"
-                            >
-                              Edit
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">2</td>
-                        <td>jacob@gmail.com</td>
-                        <td>Thornton Jcob</td>
-                        <td>MEMBER</td>
-                        <td>
-                          <div
-                            class="d-grid gap-2 d-flex justify-content-md-end"
-                          >
-                            <button
-                              class="btn btn-outline-light me-md-2 btn-table"
-                              type="button"
-                            >
-                              View
-                            </button>
-                            <button
-                              class="btn btn-outline-light btn-table"
-                              type="button"
-                            >
-                              Edit
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">3</td>
-                        <td>larry@gmail.com</td>
-                        <td>Larry Laura</td>
-                        <td>MEMBER</td>
-                        <td>
-                          <div
-                            class="d-grid gap-2 d-flex justify-content-md-end"
-                          >
-                            <button
-                              class="btn btn-outline-light me-md-2 btn-table"
-                              type="button"
-                            >
-                              View
-                            </button>
-                            <button
-                              class="btn btn-outline-light btn-table"
-                              type="button"
-                            >
-                              Edit
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">4</td>
-                        <td>yura@gmail.com</td>
-                        <td>Yura Lala</td>
-                        <td>MEMBER</td>
-                        <td>
-                          <div
-                            class="d-grid gap-2 d-flex justify-content-md-end"
-                          >
-                            <button
-                              class="btn btn-outline-light me-md-2 btn-table"
-                              type="button"
-                            >
-                              View
-                            </button>
-                            <button
-                              class="btn btn-outline-light btn-table"
-                              type="button"
-                            >
-                              Edit
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td scope="row">5</td>
-                        <td>kuki@gmail.com</td>
-                        <td>Kuka Kuki</td>
-                        <td>MEMBER</td>
-                        <td>
-                          <div
-                            class="d-grid gap-2 d-flex justify-content-md-end"
-                          >
-                            <button
-                              class="btn btn-light me-md-2 btn-table"
-                              type="button"
-                            >
-                              View
-                            </button>
-                            <button
-                              class="btn btn-light btn-table"
-                              type="button"
-                            >
-                              Edit
-                            </button>
-                          </div>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                      <p class="card-text">Last update: 2 january 2024</p>
+                      <!-- <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="card card-3" style="width: 100%">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        <ion-icon
+                          class="card-icon"
+                          name="people-circle"
+                        ></ion-icon>
+                        30
+                      </h3>
+                      <h4 class="card-subtitle mb-2">Children</h4>
+
+                      <p class="card-text">Last update: 2 january 2024</p>
+                      <!-- <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="card card-4" style="width: 100%">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        <ion-icon class="card-icon" name="body"></ion-icon>
+                        45
+                      </h3>
+                      <h4 class="card-subtitle mb-2">Man</h4>
+
+                      <p class="card-text">Last update: 2 january 2024</p>
+                      <!-- <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-4">
+                  <div class="card card-5" style="width: 100%">
+                    <div class="card-body">
+                      <h3 class="card-title">
+                        <ion-icon class="card-icon" name="woman"></ion-icon>
+                        55
+                      </h3>
+                      <h4 class="card-subtitle mb-2">Woman</h4>
+
+                      <p class="card-text">Last update: 2 january 2024</p>
+                      <!-- <a href="#" class="card-link">Another link</a> -->
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

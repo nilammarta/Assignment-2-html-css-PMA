@@ -1,0 +1,43 @@
+.dashboard-title {
+  color: #2c0066;
+  background-color: #f8f9fa;
+  padding: 2.4rem;
+}
+
+.dashboard-description {
+  color: #430099;
+  font-size: 5.6rem;
+}
+
+.card-title {
+  font-size: 5rem;
+}
+
+.card-subtitle {
+  font-size: 2.4rem;
+  text-align: end;
+  color: #2c0066;
+  padding: 1.8rem;
+  font-weight: 500;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  padding: 1.6rem 1.6rem 1.6rem 1.6rem;
+  color: #e9e2f8;
+  font-weight: 400;
+  background-color: #765aaf;
+  border-radius: 4px;
+}
+
+.card {
+  /* background-image: linear-gradient(
+    to right,
+    rgba(111, 0, 255, 0.966) 0%,
+    rgba(191, 0, 255, 0.932) 50%
+  ); */
+  background-color: #9370db;
+  border: none;
+  color: #fff;
+  height: 100%;
+}
