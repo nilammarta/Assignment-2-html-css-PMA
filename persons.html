@@ -29,6 +29,7 @@
 
     <link href="CSS/general.css" rel="stylesheet" />
     <link href="CSS/persons.css" rel="stylesheet" />
+    <link href="Query/query.css" rel="stylesheet" />
 
     <title>PERSONS - Person Management App</title>
   </head>
@@ -79,7 +80,7 @@
                 <div class="offcanvas-body d-flex flex-column gap-5">
                   <nav class="main-nav">
                     <ul class="main-nav-list">
-                      <li class="nav-item nav-open">
+                      <li class="nav-item">
                         <a class="main-nav-link" href="#"
                           ><ion-icon
                             name="file-tray-full-outline"
@@ -88,7 +89,7 @@
                           Dashboard</a
                         >
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item nav-open">
                         <a class="main-nav-link" href="#"
                           ><ion-icon
                             name="people-outline"
@@ -199,205 +200,218 @@
         </div>
 
         <div class="main-content">
-          <div class="row justify-content-center">
-            <div class="col-12">
-              <div class="persons m-3 m-md-5">
-                <nav class="navbar bg-body-tertiary">
-                  <div class="container-fluid">
-                    <h1 class="navbar-brand heading-primary m-0 p-4">
-                      Persons
-                    </h1>
-                    <form class="d-flex" role="search">
-                      <input
-                        class="form-control me-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                      />
-                      <button class="btn btn-search" type="submit">
-                        <ion-icon name="search-outline"></ion-icon>
-                      </button>
-                    </form>
-                  </div>
-                </nav>
-
-                <div class="d-flex justify-content-end">
-                  <button class="table-btn btn-add p-3 m-4">
-                    <ion-icon
-                      class="add-icon me-2"
-                      name="person-add"
-                    ></ion-icon>
-                    Add
+          <!-- <div class="row justify-content-center">
+            <div class="col-12"> -->
+          <div class="persons m-3 m-md-5">
+            <nav class="navbar bg-body-tertiary">
+              <div class="container-fluid">
+                <h1 class="navbar-brand heading-primary m-0 p-4">Persons</h1>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-search" type="submit">
+                    <ion-icon name="search-outline"></ion-icon>
                   </button>
-                </div>
-
-                <div class="table-data mt-5">
-                  <div class="table-responsive">
-                    <table class="table table-hover">
-                      <thead>
-                        <tr>
-                          <th scope="col">No</th>
-                          <th scope="col">Email</th>
-                          <th scope="col">Name</th>
-                          <th scope="col" colspan="2">Role</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td scope="row">1</td>
-                          <td>lalalulu@gmail.com</td>
-                          <td>Lala Lulu</td>
-                          <td>ADMIN</td>
-                          <td>
-                            <div
-                              class="d-grid gap-2 d-flex justify-content-md-end"
-                            >
-                              <button
-                                class="btn btn-outline-light me-md-2 btn-table"
-                                type="button"
-                              >
-                                <ion-icon
-                                  class="btn-icon"
-                                  name="eye-sharp"
-                                ></ion-icon>
-                              </button>
-                              <button
-                                class="btn btn-outline-light btn-table"
-                                type="button"
-                              >
-                                <ion-icon
-                                  class="btn-icon"
-                                  name="create-sharp"
-                                ></ion-icon>
-                              </button>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row">2</td>
-                          <td>jacob@gmail.com</td>
-                          <td>Thornton Jcob</td>
-                          <td>MEMBER</td>
-                          <td>
-                            <div
-                              class="d-grid gap-2 d-flex justify-content-md-end"
-                            >
-                              <button
-                                class="btn btn-outline-light me-md-2 btn-table"
-                                type="button"
-                              >
-                                <ion-icon
-                                  class="btn-icon"
-                                  name="eye-sharp"
-                                ></ion-icon>
-                              </button>
-                              <button
-                                class="btn btn-outline-light btn-table"
-                                type="button"
-                              >
-                                <ion-icon
-                                  class="btn-icon"
-                                  name="create-sharp"
-                                ></ion-icon>
-                              </button>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row">3</td>
-                          <td>larry@gmail.com</td>
-                          <td>Larry Laura</td>
-                          <td>MEMBER</td>
-                          <td>
-                            <div
-                              class="d-grid gap-2 d-flex justify-content-md-end"
-                            >
-                              <button
-                                class="btn btn-outline-light me-md-2 btn-table"
-                                type="button"
-                              >
-                                <ion-icon
-                                  class="btn-icon"
-                                  name="eye-sharp"
-                                ></ion-icon>
-                              </button>
-                              <button
-                                class="btn btn-outline-light btn-table"
-                                type="button"
-                              >
-                                <ion-icon
-                                  class="btn-icon"
-                                  name="create-sharp"
-                                ></ion-icon>
-                              </button>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row">4</td>
-                          <td>yura@gmail.com</td>
-                          <td>Yura Lala</td>
-                          <td>MEMBER</td>
-                          <td>
-                            <div
-                              class="d-grid gap-2 d-flex justify-content-md-end"
-                            >
-                              <button
-                                class="btn btn-outline-light me-md-2 btn-table"
-                                type="button"
-                              >
-                                <ion-icon
-                                  class="btn-icon"
-                                  name="eye-sharp"
-                                ></ion-icon>
-                              </button>
-                              <button
-                                class="btn btn-outline-light btn-table"
-                                type="button"
-                              >
-                                <ion-icon
-                                  class="btn-icon"
-                                  name="create-sharp"
-                                ></ion-icon>
-                              </button>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td scope="row">5</td>
-                          <td>kuki@gmail.com</td>
-                          <td>Kuka Kuki</td>
-                          <td>MEMBER</td>
-                          <td>
-                            <div
-                              class="d-grid gap-2 d-flex justify-content-md-end"
-                            >
-                              <button
-                                class="btn btn-light me-md-2 btn-table"
-                                type="button"
-                              >
-                                <ion-icon
-                                  class="btn-icon"
-                                  name="eye-sharp"
-                                ></ion-icon>
-                              </button>
-                              <button
-                                class="btn btn-light btn-table"
-                                type="button"
-                              >
-                                <ion-icon
-                                  class="btn-icon"
-                                  name="create-sharp"
-                                ></ion-icon>
-                              </button>
-                            </div>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
+                </form>
               </div>
+            </nav>
+
+            <div class="d-flex justify-content-end">
+              <button class="table-btn btn-add p-3 m-4">
+                <ion-icon class="add-icon me-2" name="person-add"></ion-icon>
+                Add
+              </button>
+            </div>
+
+            <div class="table-data mt-5">
+              <div class="table-responsive">
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th scope="col">No</th>
+                      <th scope="col">Email</th>
+                      <th scope="col">Name</th>
+                      <th scope="col" colspan="2">Role</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td scope="row">1</td>
+                      <td>lalalulu@gmail.com</td>
+                      <td>Lala Lulu</td>
+                      <td>ADMIN</td>
+                      <td>
+                        <div class="d-grid gap-2 d-flex justify-content-md-end">
+                          <button
+                            class="btn btn-outline-light me-md-2 btn-table"
+                            type="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="eye-sharp"
+                            ></ion-icon>
+                          </button>
+                          <button
+                            class="btn btn-outline-light btn-table"
+                            type="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="create-sharp"
+                            ></ion-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">2</td>
+                      <td>jacob@gmail.com</td>
+                      <td>Thornton Jcob</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div class="d-grid gap-2 d-flex justify-content-md-end">
+                          <button
+                            class="btn btn-outline-light me-md-2 btn-table"
+                            type="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="eye-sharp"
+                            ></ion-icon>
+                          </button>
+                          <button
+                            class="btn btn-outline-light btn-table"
+                            type="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="create-sharp"
+                            ></ion-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">3</td>
+                      <td>larry@gmail.com</td>
+                      <td>Larry Laura</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div class="d-grid gap-2 d-flex justify-content-md-end">
+                          <button
+                            class="btn btn-outline-light me-md-2 btn-table"
+                            type="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="eye-sharp"
+                            ></ion-icon>
+                          </button>
+                          <button
+                            class="btn btn-outline-light btn-table"
+                            type="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="create-sharp"
+                            ></ion-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">4</td>
+                      <td>yura@gmail.com</td>
+                      <td>Yura Lala</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div class="d-grid gap-2 d-flex justify-content-md-end">
+                          <button
+                            class="btn btn-outline-light me-md-2 btn-table"
+                            type="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="eye-sharp"
+                            ></ion-icon>
+                          </button>
+                          <button
+                            class="btn btn-outline-light btn-table"
+                            type="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="create-sharp"
+                            ></ion-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">5</td>
+                      <td>kuki@gmail.com</td>
+                      <td>Kuka Kuki</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div class="d-grid gap-2 d-flex justify-content-md-end">
+                          <button
+                            class="btn btn-light me-md-2 btn-table"
+                            type="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="eye-sharp"
+                            ></ion-icon>
+                          </button>
+                          <button class="btn btn-light btn-table" type="button">
+                            <ion-icon
+                              class="btn-icon"
+                              name="create-sharp"
+                            ></ion-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <!-- </div>
+            </div> -->
+
+            <!-- Pagination -->
+            <div class="page">
+              <nav aria-label="...">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                    <a class="page-link"
+                      ><ion-icon
+                        class="page-icon"
+                        name="caret-back-outline"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                  <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                  </li>
+                  <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#"
+                      ><ion-icon
+                        class="page-icon"
+                        name="caret-forward-outline"
+                      ></ion-icon
+                    ></a>
+                  </li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>

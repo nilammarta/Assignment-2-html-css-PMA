@@ -28,10 +28,10 @@
     ></script>
 
     <link href="CSS/general.css" rel="stylesheet" />
-    <link href="CSS/dashboard.css" rel="stylesheet" />
     <link href="Query/query.css" rel="stylesheet" />
+    <link href="CSS/create.css" rel="stylesheet" />
 
-    <title>DASHBOARD - Person Management App</title>
+    <title>CREATE - Person Management App</title>
   </head>
   <body>
     <header class="header-section">
@@ -143,14 +143,15 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="main-section d-flex flex-row">
         <div class="sidebar d-none d-lg-flex flex-column gap-5">
           <div class="sidebar-content">
             <nav class="main-nav">
               <ul class="main-nav-list">
-                <li class="nav-item nav-open">
-                  <a class="main-nav-link" href="#"
+                <li class="nav-item">
+                  <a class="main-nav-link" href="dashboard.html"
                     ><ion-icon
                       name="file-tray-full-outline"
                       class="nav-icon"
@@ -158,7 +159,7 @@
                     Dashboard</a
                   >
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-open">
                   <a class="main-nav-link" href="#"
                     ><ion-icon
                       name="people-outline"
@@ -200,103 +201,146 @@
 
         <div class="main-content">
           <div class="dashboard m-3 m-md-5">
-            <h1 class="heading-primary m-0 ps-3 content-title">DASHBOARD</h1>
-            <p class="heading-secondary ps-3 dashboard-description">
-              Hi Lala Lulu!, Welcome in Dashboard
-            </p>
-            <p class="card-text">Last update: 2 january 2024</p>
+            <h1 class="heading-primary m-0 ps-3 content-title">
+              ADD NEW PERSON
+            </h1>
 
-            <div class="widget">
-              <div class="row row-gap-4">
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-1" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon class="card-icon" name="people"></ion-icon>
-                        130
-                      </h3>
+            <form class="create-form">
+              <div class="mb-3">
+                <label for="exampleFirstnameInput" class="form-label"
+                  >First name*</label
+                >
+                <input
+                  id="exampleFirstnameInput"
+                  type="text"
+                  class="form-control"
+                  placeholder="First name"
+                  aria-label="First name"
+                />
+              </div>
 
-                      <a href="#" class="card-subtitle mb-2">Persons</a>
-                      <!-- <p class="card-text">Last update: 2 january 2024</p> -->
-                      <!-- <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-2" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon
-                          class="card-icon"
-                          name="accessibility"
-                        ></ion-icon>
-                        100
-                      </h3>
-                      <a href="#" class="card-subtitle mb-2"
-                        >In Productive Ages</a
-                      >
+              <div class="mb-3">
+                <label for="exampleLastnameInput" class="form-label"
+                  >Last name*</label
+                >
+                <input
+                  id="exampleLastnameInput"
+                  type="text"
+                  class="form-control"
+                  placeholder="Last name"
+                  aria-label="Last name"
+                />
+              </div>
 
-                      <!-- <p class="card-text">Last update: 2 january 2024</p> -->
-                      <!-- <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-3" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon class="card-icon" name="man"></ion-icon>
-                        20
-                      </h3>
-                      <a href="#" class="card-subtitle mb-2">Pased Away</a>
+              <div class="mb-3">
+                <label for="nikInput" class="form-label">NIK*</label>
+                <input
+                  id="nikInput"
+                  type="text"
+                  class="form-control"
+                  placeholder="Nomor Induk Kependudukan"
+                  aria-label="NIK"
+                />
+              </div>
 
-                      <!-- <p class="card-text">Last update: 2 january 2024</p> -->
-                      <!-- <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-3" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon
-                          class="card-icon"
-                          name="people-circle"
-                        ></ion-icon>
-                        10
-                      </h3>
-                      <a href="#" class="card-subtitle mb-2">Children</a>
-
-                      <!-- <p class="card-text">Last update: 2 january 2024</p> -->
-                      <!-- <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-4" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon class="card-icon" name="body"></ion-icon>
-                        75
-                      </h3>
-                      <a href="#" class="card-subtitle mb-2">Man</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-5" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon class="card-icon" name="woman"></ion-icon>
-                        55
-                      </h3>
-                      <a href="#" class="card-subtitle mb-2">Woman</a>
-                    </div>
-                  </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label"
+                  >Email*</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <div id="emailHelp" class="form-text">
+                  We'll never share your email with anyone else.
                 </div>
               </div>
-            </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="birthDateInput" class="form-label">
+                  Birth date*
+                </label>
+
+                <input
+                  id="birthDateInput"
+                  type="email"
+                  class="form-control"
+                  placeholder="Date of Birth"
+                />
+                <!-- <label for="floatingInput">Example DD/MM/YY</label> -->
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleSexInput" class="form-label">Sex* </label>
+                <select
+                  id="exampleSexInput"
+                  class="form-select"
+                  aria-label="Default select example"
+                  aria-placeholder="OPen this select menu"
+                >
+                  <!-- <option selected>Open this select menu</option> -->
+                  <option value="1">Male</option>
+                  <option value="2">Female</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"
+                  >Internal notes</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+
+              <div class="form-check form-switch">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  role="switch"
+                  id="flexSwitchCheckChecked"
+                  checked
+                />
+                <label class="form-check-label" for="flexSwitchCheckChecked"
+                  >This persi is Alive</label
+                >
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleRoleInput" class="form-label">Role* </label>
+                <select
+                  id="exampleRoleInput"
+                  class="form-select"
+                  aria-label="Default select example"
+                  aria-placeholder="Open this select menu"
+                >
+                  <!-- <option selected>Open this select menu</option> -->
+                  <option value="1">Admin</option>
+                  <option value="2">Member</option>
+                </select>
+              </div>
+
+              <div class="btn-create">
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="button" class="btn btn-secondary">
+                  Secondary
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </section>
