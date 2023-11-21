@@ -32,18 +32,50 @@
   font-weight: 700;
 }
 
+.card-subtitle:hover,
+.card-subtitle:active {
+  color: #880085;
+}
+
 .card-text {
   font-size: 1.6rem;
   padding: 1.6rem 1.6rem 1.6rem 1.6rem;
-  color: #fff;
+  color: #2c0066;
   font-weight: 500;
-  background-color: #765aaf;
+  background-color: #f4d35e;
   border-radius: 4px;
   width: fit-content;
 }
 
-.card {
+.card-1 {
+  background-color: #6aa74e;
+}
+
+.card-2 {
+  background-color: #535cdb;
+}
+
+.card-3 {
+  background-color: #bd632f;
+}
+
+.card-4 {
+  background-color: #ff9500;
+  /* background-color: #e2a61b; */
+}
+
+.card-5 {
+  /* background-color: #3a6ea5; */
+  background-color: #338a92;
+}
+
+.card-6 {
+  /* background-color: #006d77; */
   background-color: #9370db;
+}
+
+.card {
+  /* background-color: #9370db; */
   border: none;
   color: #fff;
   height: 100%;

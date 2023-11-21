@@ -24,22 +24,47 @@
 }
 
 .btn-search {
-  font-size: 1.6rem;
-  background-color: #6600cc;
-  color: #fff;
+  font-size: 1.8rem;
+  background-color: #ae98ff;
+  /* background-color: #a7aaff; */
+  color: #160033;
+  font-weight: 700;
 }
 
 .btn-search:hover {
-  background-color: #6600cc;
+  background-color: #5c54b6;
+}
+
+.btn-dropdown {
+  font-size: 1.8rem;
+  width: 100%;
+  background-color: #a7aaff;
+  background-color: #ae98ff;
+
+  /* background-color: #d3eca8; */
+}
+
+.btn-dropdown:hover,
+.btn-dropdown:active {
+  background-color: #5c54b6;
+  /* background-color: #ae98ff; */
+}
+
+.dropdown-item {
+  font-size: 1.6rem;
+  font-family: inherit;
+  font-weight: 500;
+  padding: 1.2rem 2.4rem;
+  background-color: #d4c6f1;
+  color: #2c0066;
 }
 
 .btn-add {
   font-size: 1.8rem;
-  font-weight: 600;
-  border: none;
   border-radius: 9px;
-  background-color: #6600cc;
+  /* background-color: #8100e6; */
   color: #fff;
+  margin: 1.2rem;
 }
 
 .add-icon {
@@ -62,14 +87,13 @@
 }
 
 thead {
-  /* color: #6600cc; */
   font-size: 1.8rem;
   text-transform: uppercase;
-  background-color: #f4f1fb;
+  background-color: #ae98ff;
 }
 
-/* thead tr {
-  color: #2c0066;
+/* th {
+  color: #fff;
 } */
 
 tbody {
@@ -100,6 +124,7 @@ tbody {
 /* Pagination */
 .page {
   text-align: center;
+  margin-top: 6.4rem;
 }
 
 .page-item {

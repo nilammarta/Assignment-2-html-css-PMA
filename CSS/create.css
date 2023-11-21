@@ -3,3 +3,52 @@
   color: #2c0066;
   font-weight: 600;
 }
+
+.form-control {
+  font-size: 1.8rem;
+}
+
+.create {
+  color: #2c0066;
+  margin: 3rem;
+}
+
+.create-form {
+  margin-top: 4.8rem;
+  /* margin-left: 3rem; */
+}
+
+.create-form input,
+.create-form select {
+  width: 100%;
+  font-size: 1.8rem;
+  padding: 1.2rem;
+  letter-spacing: 1px;
+  /* menggunakan properti inherit untuk mewariskan font family dari parent */
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #f4f1fb;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.form-check {
+  font-size: 1.8rem;
+}
+
+.create *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(66, 0, 153, 0.788);
+  /* background-color: #eaeaea; */
+}
+
+.btn-save,
+.btn-cancel {
+  font-size: 1.8rem;
+  padding: 1.2rem 2rem;
+}
+
+.form-check-label {
+  font-size: 1.8rem;
+}

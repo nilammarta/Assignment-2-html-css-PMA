@@ -18,6 +18,8 @@
       crossorigin="anonymous"
     />
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
@@ -200,147 +202,165 @@
         </div>
 
         <div class="main-content">
-          <div class="dashboard m-3 m-md-5">
-            <h1 class="heading-primary m-0 ps-3 content-title">
-              ADD NEW PERSON
-            </h1>
+          <div class="create m-5 m-md-5">
+            <h1 class="heading-primary m-0 ps-3 content-title">ADD PERSON</h1>
 
-            <form class="create-form">
-              <div class="mb-3">
-                <label for="exampleFirstnameInput" class="form-label"
-                  >First name*</label
-                >
-                <input
-                  id="exampleFirstnameInput"
-                  type="text"
-                  class="form-control"
-                  placeholder="First name"
-                  aria-label="First name"
-                />
-              </div>
+            <div class="row">
+              <div class="col-md-12 col-lg-8 col-xxl-6">
+                <form class="create-form needs-validation">
+                  <div class="mb-5">
+                    <label for="FirstnameInput" class="form-label"
+                      >First name &#42;</label
+                    >
 
-              <div class="mb-3">
-                <label for="exampleLastnameInput" class="form-label"
-                  >Last name*</label
-                >
-                <input
-                  id="exampleLastnameInput"
-                  type="text"
-                  class="form-control"
-                  placeholder="Last name"
-                  aria-label="Last name"
-                />
-              </div>
+                    <input
+                      id="FirstnameInput"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="first name"
+                      aria-label="First name"
+                      required
+                    />
 
-              <div class="mb-3">
-                <label for="nikInput" class="form-label">NIK*</label>
-                <input
-                  id="nikInput"
-                  type="text"
-                  class="form-control"
-                  placeholder="Nomor Induk Kependudukan"
-                  aria-label="NIK"
-                />
-              </div>
+                    <!-- <div class="invalid-tooltip">Type the valid First name</div> -->
+                  </div>
 
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label"
-                  >Email*</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div id="emailHelp" class="form-text">
-                  We'll never share your email with anyone else.
-                </div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label"
-                  >Password</label
-                >
-                <input
-                  type="password"
-                  class="form-control"
-                  id="exampleInputPassword1"
-                />
-              </div>
+                  <div class="mb-5">
+                    <label for="LastnameInput" class="form-label"
+                      >Last name &#42;
+                    </label>
+                    <input
+                      id="LastnameInput"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="last name"
+                      aria-label="Last name"
+                      required
+                    />
+                  </div>
 
-              <div class="mb-3">
-                <label for="birthDateInput" class="form-label">
-                  Birth date*
-                </label>
+                  <div class="mb-5">
+                    <label for="nikInput" class="form-label">NIK &#42;</label>
+                    <input
+                      id="nikInput"
+                      type="number"
+                      class="form-control form-control-lg"
+                      placeholder="Nomor Induk Kependudukan"
+                      aria-label="NIK"
+                      required
+                    />
+                  </div>
 
-                <input
-                  id="birthDateInput"
-                  type="email"
-                  class="form-control"
-                  placeholder="Date of Birth"
-                />
-                <!-- <label for="floatingInput">Example DD/MM/YY</label> -->
-              </div>
+                  <div class="mb-5">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Email &#42;</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="name@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="mb-5">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password &#42;</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control form-control-lg"
+                      id="exampleInputPassword1"
+                      placeholder="password"
+                      required
+                    />
+                  </div>
 
-              <div class="mb-3">
-                <label for="exampleSexInput" class="form-label">Sex* </label>
-                <select
-                  id="exampleSexInput"
-                  class="form-select"
-                  aria-label="Default select example"
-                  aria-placeholder="OPen this select menu"
-                >
-                  <!-- <option selected>Open this select menu</option> -->
-                  <option value="1">Male</option>
-                  <option value="2">Female</option>
-                </select>
-              </div>
+                  <div class="mb-5">
+                    <label for="birthDateInput" class="form-label">
+                      Birth date &#42;
+                    </label>
 
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label"
-                  >Internal notes</label
-                >
-                <textarea
-                  class="form-control"
-                  id="exampleFormControlTextarea1"
-                  rows="3"
-                ></textarea>
-              </div>
+                    <input
+                      id="birthDateInput"
+                      type="date"
+                      class="form-control form-control-lg"
+                      required
+                    />
+                  </div>
 
-              <div class="form-check form-switch">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexSwitchCheckChecked"
-                  >This persi is Alive</label
-                >
-              </div>
+                  <div class="mb-5">
+                    <label for="exampleSexInput" class="form-label"
+                      >Sex &#42;
+                    </label>
+                    <select
+                      id="exampleSexInput"
+                      class="form-select form-select-lg"
+                      aria-label="Default select example"
+                      required
+                    >
+                      <option selected>choose...</option>
+                      <option value="1">Male</option>
+                      <option value="2">Female</option>
+                    </select>
+                  </div>
 
-              <div class="mb-3">
-                <label for="exampleRoleInput" class="form-label">Role* </label>
-                <select
-                  id="exampleRoleInput"
-                  class="form-select"
-                  aria-label="Default select example"
-                  aria-placeholder="Open this select menu"
-                >
-                  <!-- <option selected>Open this select menu</option> -->
-                  <option value="1">Admin</option>
-                  <option value="2">Member</option>
-                </select>
-              </div>
+                  <div class="mb-5">
+                    <label for="exampleFormControlTextarea1" class="form-label"
+                      >Internal notes</label
+                    >
+                    <textarea
+                      class="form-control form-control-lg"
+                      id="exampleFormControlTextarea1"
+                      rows="3"
+                    ></textarea>
+                  </div>
 
-              <div class="btn-create">
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <button type="button" class="btn btn-secondary">
-                  Secondary
-                </button>
+                  <div class="mb-5">
+                    <label for="exampleRoleInput" class="form-label"
+                      >Role &#42;</label
+                    >
+                    <select
+                      id="exampleRoleInput"
+                      class="form-select form-select-lg"
+                      aria-label="Default select example"
+                    >
+                      <option selected>choose...</option>
+                      <option value="1">Admin</option>
+                      <option value="2">Member</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid state.
+                    </div>
+                  </div>
+
+                  <div
+                    class="form-check form-switch mb-5 d-flex flex-row align-items-end gap-3"
+                  >
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      role="switch"
+                      id="flexSwitchCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexSwitchCheckChecked"
+                      >This person is Alive</label
+                    >
+                  </div>
+
+                  <div class="btn-create">
+                    <button type="submit" class="btn btn-primary btn-save">
+                      Save
+                    </button>
+                    <button type="reset" class="btn btn-secondary btn-cancel">
+                      Cancel
+                    </button>
+                  </div>
+                </form>
               </div>
-            </form>
+            </div>
           </div>
         </div>
       </section>
