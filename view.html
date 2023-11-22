@@ -30,10 +30,10 @@
     ></script>
 
     <link href="CSS/general.css" rel="stylesheet" />
-    <link href="CSS/dashboard.css" rel="stylesheet" />
     <link href="Query/query.css" rel="stylesheet" />
+    <link href="CSS/view.css" rel="stylesheet" />
 
-    <title>DASHBOARD - Person Management App</title>
+    <title>VIEW - Person Management App</title>
   </head>
   <body>
     <header class="header-section">
@@ -83,7 +83,7 @@
                   <nav class="main-nav">
                     <ul class="main-nav-list">
                       <li class="nav-item nav-open">
-                        <a class="main-nav-link" href="#"
+                        <a class="main-nav-link" href="dashboard.html"
                           ><ion-icon
                             name="file-tray-full-outline"
                             class="nav-icon"
@@ -92,7 +92,7 @@
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="main-nav-link" href="#"
+                        <a class="main-nav-link" href="persons.html"
                           ><ion-icon
                             name="people-outline"
                             class="nav-icon"
@@ -145,13 +145,14 @@
         </div>
       </div>
     </header>
+
     <main>
       <section class="main-section d-flex flex-row">
         <div class="sidebar d-none d-lg-flex flex-column gap-5">
           <div class="sidebar-content">
             <nav class="main-nav">
               <ul class="main-nav-list">
-                <li class="nav-item nav-open">
+                <li class="nav-item">
                   <a class="main-nav-link" href="dashboard.html"
                     ><ion-icon
                       name="file-tray-full-outline"
@@ -160,7 +161,7 @@
                     Dashboard</a
                   >
                 </li>
-                <li class="nav-item">
+                <li class="nav-item nav-open">
                   <a class="main-nav-link" href="persons.html"
                     ><ion-icon
                       name="people-outline"
@@ -201,103 +202,107 @@
         </div>
 
         <div class="main-content">
-          <div class="dashboard m-3 m-md-5">
+          <div class="profile m-3 m-md-5">
             <div class="content-title">
-              <h1 class="heading-primary m-0 ps-3 p-4">DASHBOARD</h1>
+              <h1 class="heading-primary m-0 ps-3 p-4">VIEW PERSON DATA</h1>
             </div>
-            <p class="heading-secondary ps-3 dashboard-description">
-              Hi Lala Lulu!, Welcome in Dashboard
-            </p>
-            <p class="card-text">Last update: 2 january 2024</p>
 
-            <div class="widget">
-              <div class="row row-gap-4">
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-1" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon class="card-icon" name="people"></ion-icon>
-                        130
-                      </h3>
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-10 col-xl-9 col-xxl-6">
+                <div class="card" style="width: 100%">
+                  <!-- <img src="" class="card-img-top" alt="..." /> -->
+                  <ion-icon
+                    class="user-foto"
+                    name="person-circle-outline"
+                  ></ion-icon>
+                  <div class="card-body">
+                    <h3 class="card-title p-4 heading-tertiary">Person Data</h3>
+                    <!-- <p class="card-text">
+                    Some quick example text to build on the card title and make up
+                    the bulk of the card's content.
+                    </p> -->
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item p-3 d-flex">
+                      <div class="card-label">Fist name</div>
+                      <div>&#58;</div>
+                      <div class="card-data">Lala</div>
+                    </li>
+                    <li class="list-group-item p-3 d-flex">
+                      <div class="card-label">Last name</div>
+                      <div>&#58;</div>
+                      <div class="card-data">Lulu</div>
+                    </li>
+                    <li class="list-group-item p-3 d-flex">
+                      <div class="card-label">NIK</div>
+                      <div>&#58;</div>
+                      <div class="card-data">1001267392823094</div>
+                    </li>
+                    <li class="list-group-item p-3 d-flex">
+                      <div class="card-label">Email</div>
+                      <div>&#58;</div>
+                      <div class="card-data">lalagemoy@gmail.com</div>
+                    </li>
+                    <li class="list-group-item p-3 d-flex">
+                      <div class="card-label">Birth date</div>
+                      <div>&#58;</div>
+                      <div class="card-data">01/01/2001</div>
+                    </li>
+                    <li class="list-group-item p-3 d-flex">
+                      <div class="card-label">Sex</div>
+                      <div>&#58;</div>
+                      <div class="card-data">Female</div>
+                    </li>
+                    <li class="list-group-item p-3">
+                      <div class="card-label-2">Internal notes &#58;</div>
+                      <div class="card-data"></div>
+                    </li>
+                  </ul>
 
-                      <a href="#" class="card-subtitle mb-2">Persons</a>
-                      <!-- <p class="card-text">Last update: 2 january 2024</p> -->
-                      <!-- <a href="#" class="card-link">Card link</a>
-                      <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-2" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon
-                          class="card-icon"
-                          name="accessibility"
-                        ></ion-icon>
-                        100
-                      </h3>
-                      <a href="#" class="card-subtitle mb-2"
-                        >In Productive Ages</a
-                      >
-
-                      <!-- <p class="card-text">Last update: 2 january 2024</p> -->
-                      <!-- <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-3" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon class="card-icon" name="man"></ion-icon>
-                        20
-                      </h3>
-                      <a href="#" class="card-subtitle mb-2">Pased Away</a>
-
-                      <!-- <p class="card-text">Last update: 2 january 2024</p> -->
-                      <!-- <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-4" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon
-                          class="card-icon"
-                          name="people-circle-outline"
-                        ></ion-icon>
-                        10
-                      </h3>
-                      <a href="#" class="card-subtitle mb-2">Children</a>
-
-                      <!-- <p class="card-text">Last update: 2 january 2024</p> -->
-                      <!-- <a href="#" class="card-link">Another link</a> -->
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-5" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon class="card-icon" name="body"></ion-icon>
-                        75
-                      </h3>
-                      <a href="#" class="card-subtitle mb-2">Male</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-6 col-xl-4">
-                  <div class="card card-6" style="width: 100%">
-                    <div class="card-body">
-                      <h3 class="card-title">
-                        <ion-icon class="card-icon" name="woman"></ion-icon>
-                        55
-                      </h3>
-                      <a href="#" class="card-subtitle mb-2">Female</a>
-                    </div>
-                  </div>
+                  <!-- <table class="table">
+                    <tbody>
+                      <tr>
+                        <th class="card-label">First name</th>
+                        <td>&#58;</td>
+                        <td>Lala</td>
+                      </tr>
+                      <tr>
+                        <th>Last name</th>
+                        <td>&#58;</td>
+                        <td>Lulu</td>
+                      </tr>
+                      <tr>
+                        <th>NIK</th>
+                        <td>&#58;</td>
+                        <td>1001267392823094</td>
+                      </tr>
+                      <tr>
+                        <th>Email</th>
+                        <td>&#58;</td>
+                        <td>lalagemoy@gmail.com</td>
+                      </tr>
+                      <tr>
+                        <th>Birth date</th>
+                        <td>&#58;</td>
+                        <td>10 january 2023</td>
+                      </tr>
+                      <tr>
+                        <th>Sex</th>
+                        <td>&#58;</td>
+                        <td>Female</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item p-3 d-flex flex-column gap-3">
+                      <div class="card-label">Internal notes &#58;</div>
+                      <div class="card-data">coba</div>
+                    </li>
+                  </ul> -->
+                  <!-- <div class="card-body">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div> -->
                 </div>
               </div>
             </div>

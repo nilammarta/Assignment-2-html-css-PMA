@@ -83,7 +83,7 @@
                   <nav class="main-nav">
                     <ul class="main-nav-list">
                       <li class="nav-item nav-open">
-                        <a class="main-nav-link" href="#"
+                        <a class="main-nav-link" href="dashboard.html"
                           ><ion-icon
                             name="file-tray-full-outline"
                             class="nav-icon"
@@ -92,7 +92,7 @@
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="main-nav-link" href="#"
+                        <a class="main-nav-link" href="persons.html"
                           ><ion-icon
                             name="people-outline"
                             class="nav-icon"
@@ -162,7 +162,7 @@
                   >
                 </li>
                 <li class="nav-item nav-open">
-                  <a class="main-nav-link" href="#"
+                  <a class="main-nav-link" href="persons.html"
                     ><ion-icon
                       name="people-outline"
                       class="nav-icon"
@@ -202,12 +202,17 @@
         </div>
 
         <div class="main-content">
-          <div class="create m-5 m-md-5">
-            <h1 class="heading-primary m-0 ps-3 content-title">ADD PERSON</h1>
+          <div class="create m-3 m-md-5">
+            <div class="content-title">
+              <h1 class="heading-primary m-0 ps-3 p-4">ADD PERSON</h1>
+            </div>
 
-            <div class="row">
-              <div class="col-md-12 col-lg-8 col-xxl-6">
-                <form class="create-form needs-validation">
+            <div class="row justify-content-center">
+              <div class="col-md-12 col-lg-9 col-xxl-6">
+                <form class="create-form needs-validation p-4">
+                  <h2 class="heading-secondary form-text pb-2">
+                    Add new person data in the form below:
+                  </h2>
                   <div class="mb-5">
                     <label for="FirstnameInput" class="form-label"
                       >First name &#42;</label
@@ -301,9 +306,23 @@
                       required
                     >
                       <option selected>choose...</option>
-                      <option value="1">Male</option>
-                      <option value="2">Female</option>
+                      <option class="option-value" value="1">Male</option>
+                      <option class="option-value" value="2">Female</option>
                     </select>
+                  </div>
+
+                  <div class="mb-5">
+                    <label for="addressInput" class="form-label"
+                      >Address &#42;
+                    </label>
+                    <input
+                      id="addressInput"
+                      type="text"
+                      class="form-control form-control-lg"
+                      placeholder="address"
+                      aria-label="Last name"
+                      required
+                    />
                   </div>
 
                   <div class="mb-5">
@@ -327,8 +346,8 @@
                       aria-label="Default select example"
                     >
                       <option selected>choose...</option>
-                      <option value="1">Admin</option>
-                      <option value="2">Member</option>
+                      <option class="option-value" value="1">Admin</option>
+                      <option class="option-value" value="2">Member</option>
                     </select>
                     <div class="invalid-feedback">
                       Please select a valid state.
@@ -346,7 +365,7 @@
                       checked
                     />
                     <label class="form-check-label" for="flexSwitchCheckChecked"
-                      >This person is Alive</label
+                      >This person is alive</label
                     >
                   </div>
 

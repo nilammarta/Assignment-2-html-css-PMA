@@ -1,0 +1,21 @@
+.card {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+  background-color: #f8f7fd;
+}
+
+.user-foto {
+  height: 5.6rem;
+  width: 5.6rem;
+}
+
+.list-group-item {
+  font-size: 1.6rem;
+}
+
+.card-label {
+  width: 110px;
+}
+
+.table {
+  font-size: 1.6rem;
+}
