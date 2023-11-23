@@ -3,19 +3,30 @@
   background-color: #f8f7fd;
 }
 
-.user-foto {
-  height: 5.6rem;
-  width: 5.6rem;
+/* .user-foto {
+  height: 60%;
+  width: 80%;
+} */
+
+.card-body-1 {
+  background-color: #ae98ff;
 }
 
-.list-group-item {
-  font-size: 1.6rem;
+.card-body-2 {
+  color: #444;
+}
+
+.main-title {
+  text-align: center;
+  color: #1a1176;
+  font-weight: 700;
 }
 
 .card-label {
-  width: 110px;
+  min-width: 150px;
 }
 
-.table {
-  font-size: 1.6rem;
+.btn-card {
+  border-top: 1px solid #d8d8d8;
+  background-color: #f1f3f5;
 }

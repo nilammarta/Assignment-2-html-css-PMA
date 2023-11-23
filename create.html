@@ -40,13 +40,13 @@
       <div class="header">
         <div class="d-flex justify-content-between align-items-center">
           <div class="logo-box">
-            <h1 class="heading-primary m-0">PERMAP</h1>
+            <h2 class="heading-2 m-0">PERMAP</h2>
           </div>
 
           <div class="d-flex justify-content-end align-items-center">
             <div class="d-lg-none">
               <button
-                class="btn btn-menu"
+                class="btn btn-menu p-0"
                 type="button"
                 data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasScrolling"
@@ -65,12 +65,12 @@
                 aria-labelledby="offcanvasScrollingLabel"
               >
                 <div class="offcanvas-header">
-                  <h5
-                    class="offcanvas-title heading-primary m-0"
+                  <h2
+                    class="offcanvas-title heading-2 m-0"
                     id="offcanvasScrollingLabel"
                   >
                     PERMAP
-                  </h5>
+                  </h2>
                   <button
                     class="btn--close"
                     type="button"
@@ -79,11 +79,11 @@
                     <ion-icon class="icon-header" name="close"></ion-icon>
                   </button>
                 </div>
-                <div class="offcanvas-body d-flex flex-column gap-5">
+                <div class="offcanvas-body d-flex flex-column gap-4">
                   <nav class="main-nav">
                     <ul class="main-nav-list">
                       <li class="nav-item nav-open">
-                        <a class="main-nav-link" href="dashboard.html"
+                        <a class="main-nav-link" href="#"
                           ><ion-icon
                             name="file-tray-full-outline"
                             class="nav-icon"
@@ -92,7 +92,7 @@
                         >
                       </li>
                       <li class="nav-item">
-                        <a class="main-nav-link" href="persons.html"
+                        <a class="main-nav-link" href="#"
                           ><ion-icon
                             name="people-outline"
                             class="nav-icon"
@@ -104,7 +104,7 @@
                   </nav>
 
                   <div class="profile">
-                    <h2 class="heading-secondary sub-heading m-0">Account</h2>
+                    <h6 class="heading-6 sub-heading m-0">Account</h6>
                     <nav class="main-nav">
                       <ul class="main-nav-list">
                         <li class="nav-item">
@@ -152,8 +152,8 @@
           <div class="sidebar-content">
             <nav class="main-nav">
               <ul class="main-nav-list">
-                <li class="nav-item">
-                  <a class="main-nav-link" href="dashboard.html"
+                <li class="nav-item nav-open">
+                  <a class="main-nav-link" href="#"
                     ><ion-icon
                       name="file-tray-full-outline"
                       class="nav-icon"
@@ -161,8 +161,8 @@
                     Dashboard</a
                   >
                 </li>
-                <li class="nav-item nav-open">
-                  <a class="main-nav-link" href="persons.html"
+                <li class="nav-item">
+                  <a class="main-nav-link" href="#"
                     ><ion-icon
                       name="people-outline"
                       class="nav-icon"
@@ -174,7 +174,7 @@
             </nav>
 
             <div class="profile">
-              <h2 class="heading-secondary sub-heading m-0">Account</h2>
+              <h6 class="heading-6 sub-heading m-0">Account</h6>
               <nav class="main-nav">
                 <ul class="main-nav-list">
                   <li class="nav-item">
@@ -202,180 +202,199 @@
         </div>
 
         <div class="main-content">
-          <div class="create m-3 m-md-5">
+          <div class="create m-3 m-md-4">
             <div class="content-title">
-              <h1 class="heading-primary m-0 ps-3 p-4">ADD PERSON</h1>
+              <h2 class="heading-2 m-0 p-3">ADD PERSON</h2>
             </div>
 
             <div class="row justify-content-center">
-              <div class="col-md-12 col-lg-9 col-xxl-6">
-                <form class="create-form needs-validation p-4">
-                  <h2 class="heading-secondary form-text pb-2">
+              <!-- <div class="col-12 col-md-10 col-lg-11 col-xxl-6"> -->
+              <div class="col-12">
+                <form class="create-form needs-validation p-4 mb-5">
+                  <h5 class="form-text pb-2 mb-4">
                     Add new person data in the form below:
-                  </h2>
-                  <div class="mb-5">
-                    <label for="FirstnameInput" class="form-label"
-                      >First name &#42;</label
-                    >
+                  </h5>
+                  <div class="d-lg-flex gap-lg-3 gap-xl-5">
+                    <div class="form-1">
+                      <div class="mb-3">
+                        <label for="FirstnameInput" class="form-label"
+                          >First name &#42;</label
+                        >
 
-                    <input
-                      id="FirstnameInput"
-                      type="text"
-                      class="form-control form-control-lg"
-                      placeholder="first name"
-                      aria-label="First name"
-                      required
-                    />
+                        <input
+                          id="FirstnameInput"
+                          type="text"
+                          class="form-control"
+                          placeholder="first name"
+                          aria-label="First name"
+                          required
+                        />
 
-                    <!-- <div class="invalid-tooltip">Type the valid First name</div> -->
-                  </div>
+                        <!-- <div class="invalid-tooltip">Type the valid First name</div> -->
+                      </div>
 
-                  <div class="mb-5">
-                    <label for="LastnameInput" class="form-label"
-                      >Last name &#42;
-                    </label>
-                    <input
-                      id="LastnameInput"
-                      type="text"
-                      class="form-control form-control-lg"
-                      placeholder="last name"
-                      aria-label="Last name"
-                      required
-                    />
-                  </div>
+                      <div class="mb-3">
+                        <label for="LastnameInput" class="form-label"
+                          >Last name &#42;
+                        </label>
+                        <input
+                          id="LastnameInput"
+                          type="text"
+                          class="form-control"
+                          placeholder="last name"
+                          aria-label="Last name"
+                          required
+                        />
+                      </div>
 
-                  <div class="mb-5">
-                    <label for="nikInput" class="form-label">NIK &#42;</label>
-                    <input
-                      id="nikInput"
-                      type="number"
-                      class="form-control form-control-lg"
-                      placeholder="Nomor Induk Kependudukan"
-                      aria-label="NIK"
-                      required
-                    />
-                  </div>
+                      <div class="mb-3">
+                        <label for="nikInput" class="form-label"
+                          >NIK &#42;</label
+                        >
+                        <input
+                          id="nikInput"
+                          type="number"
+                          class="form-control"
+                          placeholder="Nomor Induk Kependudukan"
+                          aria-label="NIK"
+                          required
+                        />
+                      </div>
 
-                  <div class="mb-5">
-                    <label for="exampleInputEmail1" class="form-label"
-                      >Email &#42;</label
-                    >
-                    <input
-                      type="email"
-                      class="form-control form-control-lg"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      placeholder="name@example.com"
-                      required
-                    />
-                  </div>
-                  <div class="mb-5">
-                    <label for="exampleInputPassword1" class="form-label"
-                      >Password &#42;</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control form-control-lg"
-                      id="exampleInputPassword1"
-                      placeholder="password"
-                      required
-                    />
-                  </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label"
+                          >Email &#42;</label
+                        >
+                        <input
+                          type="email"
+                          class="form-control"
+                          id="exampleInputEmail1"
+                          aria-describedby="emailHelp"
+                          placeholder="name@example.com"
+                          required
+                        />
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label"
+                          >Password &#42;</label
+                        >
+                        <input
+                          type="password"
+                          class="form-control"
+                          id="exampleInputPassword1"
+                          placeholder="password"
+                          required
+                        />
+                      </div>
 
-                  <div class="mb-5">
-                    <label for="birthDateInput" class="form-label">
-                      Birth date &#42;
-                    </label>
+                      <div class="mb-3">
+                        <label for="birthDateInput" class="form-label">
+                          Birth date &#42;
+                        </label>
 
-                    <input
-                      id="birthDateInput"
-                      type="date"
-                      class="form-control form-control-lg"
-                      required
-                    />
-                  </div>
+                        <input
+                          id="birthDateInput"
+                          type="date"
+                          class="form-control"
+                          required
+                        />
+                      </div>
 
-                  <div class="mb-5">
-                    <label for="exampleSexInput" class="form-label"
-                      >Sex &#42;
-                    </label>
-                    <select
-                      id="exampleSexInput"
-                      class="form-select form-select-lg"
-                      aria-label="Default select example"
-                      required
-                    >
-                      <option selected>choose...</option>
-                      <option class="option-value" value="1">Male</option>
-                      <option class="option-value" value="2">Female</option>
-                    </select>
-                  </div>
+                      <div class="mb-3">
+                        <label for="exampleSexInput" class="form-label"
+                          >Sex &#42;
+                        </label>
+                        <select
+                          id="exampleSexInput"
+                          class="form-select"
+                          aria-label="Default select example"
+                          required
+                        >
+                          <option selected>choose...</option>
+                          <option class="option-value" value="1">Male</option>
+                          <option class="option-value" value="2">Female</option>
+                        </select>
+                      </div>
 
-                  <div class="mb-5">
-                    <label for="addressInput" class="form-label"
-                      >Address &#42;
-                    </label>
-                    <input
-                      id="addressInput"
-                      type="text"
-                      class="form-control form-control-lg"
-                      placeholder="address"
-                      aria-label="Last name"
-                      required
-                    />
-                  </div>
-
-                  <div class="mb-5">
-                    <label for="exampleFormControlTextarea1" class="form-label"
-                      >Internal notes</label
-                    >
-                    <textarea
-                      class="form-control form-control-lg"
-                      id="exampleFormControlTextarea1"
-                      rows="3"
-                    ></textarea>
-                  </div>
-
-                  <div class="mb-5">
-                    <label for="exampleRoleInput" class="form-label"
-                      >Role &#42;</label
-                    >
-                    <select
-                      id="exampleRoleInput"
-                      class="form-select form-select-lg"
-                      aria-label="Default select example"
-                    >
-                      <option selected>choose...</option>
-                      <option class="option-value" value="1">Admin</option>
-                      <option class="option-value" value="2">Member</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      Please select a valid state.
+                      <div class="mb-3">
+                        <label for="addressInput" class="form-label"
+                          >Address &#42;
+                        </label>
+                        <input
+                          id="addressInput"
+                          type="text"
+                          class="form-control"
+                          placeholder="address"
+                          aria-label="Last name"
+                          required
+                        />
+                      </div>
                     </div>
-                  </div>
 
-                  <div
-                    class="form-check form-switch mb-5 d-flex flex-row align-items-end gap-3"
-                  >
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      role="switch"
-                      id="flexSwitchCheckChecked"
-                      checked
-                    />
-                    <label class="form-check-label" for="flexSwitchCheckChecked"
-                      >This person is alive</label
-                    >
-                  </div>
+                    <div class="form-2">
+                      <div class="mb-3">
+                        <label
+                          for="exampleFormControlTextarea1"
+                          class="form-label"
+                          >Internal notes</label
+                        >
+                        <textarea
+                          class="form-control"
+                          id="exampleFormControlTextarea1"
+                          rows="3"
+                        ></textarea>
+                      </div>
 
-                  <div class="btn-create">
-                    <button type="submit" class="btn btn-primary btn-save">
-                      Save
-                    </button>
-                    <button type="reset" class="btn btn-secondary btn-cancel">
-                      Cancel
-                    </button>
+                      <div class="mb-3">
+                        <label for="exampleRoleInput" class="form-label"
+                          >Role &#42;</label
+                        >
+                        <select
+                          id="exampleRoleInput"
+                          class="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option selected>choose...</option>
+                          <option class="option-value" value="1">Admin</option>
+                          <option class="option-value" value="2">Member</option>
+                        </select>
+                        <div class="invalid-feedback">
+                          Please select a valid state.
+                        </div>
+                      </div>
+
+                      <div
+                        class="form-check form-switch mb-5 d-flex flex-row align-items-end gap-3"
+                      >
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          role="switch"
+                          id="flexSwitchCheckChecked"
+                          checked
+                        />
+                        <label
+                          class="form-check-label"
+                          for="flexSwitchCheckChecked"
+                          >This person is alive</label
+                        >
+                      </div>
+
+                      <div class="btn-create">
+                        <button
+                          type="submit"
+                          class="btn btn-primary btn-save me-3"
+                        >
+                          Save
+                        </button>
+                        <button
+                          type="reset"
+                          class="btn btn-secondary btn-cancel"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </form>
               </div>
