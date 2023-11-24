@@ -32,6 +32,7 @@
     <link href="CSS/general.css" rel="stylesheet" />
     <link href="Query/query.css" rel="stylesheet" />
     <link href="CSS/view.css" rel="stylesheet" />
+    <link href="CSS/create.css" rel="stylesheet" />
 
     <title>VIEW - Person Management App</title>
   </head>
@@ -82,7 +83,7 @@
                 <div class="offcanvas-body d-flex flex-column gap-4">
                   <nav class="main-nav">
                     <ul class="main-nav-list">
-                      <li class="nav-item nav-open">
+                      <li class="nav-item">
                         <a class="main-nav-link" href="#"
                           ><ion-icon
                             name="file-tray-full-outline"
@@ -91,7 +92,7 @@
                           Dashboard</a
                         >
                       </li>
-                      <li class="nav-item">
+                      <li class="nav-item nav-open">
                         <a class="main-nav-link" href="#"
                           ><ion-icon
                             name="people-outline"
@@ -152,8 +153,8 @@
           <div class="sidebar-content">
             <nav class="main-nav">
               <ul class="main-nav-list">
-                <li class="nav-item nav-open">
-                  <a class="main-nav-link" href="#"
+                <li class="nav-item">
+                  <a class="main-nav-link" href="dashboard.html"
                     ><ion-icon
                       name="file-tray-full-outline"
                       class="nav-icon"
@@ -161,8 +162,8 @@
                     Dashboard</a
                   >
                 </li>
-                <li class="nav-item">
-                  <a class="main-nav-link" href="#"
+                <li class="nav-item nav-open">
+                  <a class="main-nav-link" href="persons.html"
                     ><ion-icon
                       name="people-outline"
                       class="nav-icon"
@@ -178,7 +179,7 @@
               <nav class="main-nav">
                 <ul class="main-nav-list">
                   <li class="nav-item">
-                    <a class="main-nav-link" href="#"
+                    <a class="main-nav-link" href="myProfil.html"
                       ><ion-icon
                         name="person-circle-outline"
                         class="nav-icon"
@@ -210,68 +211,16 @@
             <div class="row justify-content-center">
               <div class="col-12 col-lg-10 col-xl-9 col-xxl-7">
                 <div class="card" style="width: 100%">
-                  <!-- <img
-                    src="Pasted image.png"
-                    class="card-img-top user-foto"
-                    alt="Person image"
-                  /> -->
-                  <!-- <ion-icon
-                    class="user-foto"
-                    name="person-circle-outline"
-                  ></ion-icon> -->
-                  <div class="card-body card-body-1">
-                    <h3 class="card-title main-title p-4 heading-tertiary">
+                  <div
+                    class="card-body card-body-1 d-flex justify-content-center"
+                  >
+                    <h3 class="card-title main-title p-4 m-2 heading-tertiary">
                       Person Data
                     </h3>
-                    <!-- <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
-                    </p> -->
                   </div>
 
-                  <!-- <ul class="list-group list-group-flush">
-                    <li class="list-group-item p-3 d-flex">
-                      <div class="card-label">Fist name</div>
-                      <div>:</div>
-                      <div class="card-data ms-2">Lala</div>
-                    </li>
-                    <li class="list-group-item p-3 d-flex">
-                      <div class="card-label">Last name</div>
-                      <div>&#58;</div>
-                      <div class="card-data ms-2">Lulu</div>
-                    </li>
-                    <li class="list-group-item p-3 d-flex">
-                      <div class="card-label">NIK</div>
-                      <div>&#58;</div>
-                      <div class="card-data ms-2">1001267392823094</div>
-                    </li>
-                    <li class="list-group-item p-3 d-flex">
-                      <div class="card-label">Email</div>
-                      <div>&#58;</div>
-                      <div class="card-data ms-2">lalagemoy@gmail.com</div>
-                    </li>
-                    <li class="list-group-item p-3 d-flex">
-                      <div class="card-label">Birth date</div>
-                      <div>&#58;</div>
-                      <div class="card-data ms-2">01/01/2001</div>
-                    </li>
-                    <li class="list-group-item p-3 d-flex">
-                      <div class="card-label">Sex</div>
-                      <div>&#58;</div>
-                      <div class="card-data ms-2">Female</div>
-                    </li>
-                    <li class="list-group-item p-3">
-                      <div class="card-label-2">Internal notes &#58;</div>
-                      <div class="card-data"></div>
-                    </li>
-                  </ul>
-                  <div class="card-body">
-                    <h6 class="card-title">Internal notes &#58;</h6>
-                    <div class="card-text">coba</div>
-                  </div> -->
-
                   <div class="table-responsive">
-                    <table class="table">
+                    <table class="table mb-0">
                       <tbody>
                         <tr>
                           <td class="card-label">First name</td>
@@ -303,34 +252,87 @@
                           <td>&#58;</td>
                           <td>Female</td>
                         </tr>
+                        <tr>
+                          <td>Address</td>
+                          <td>&#58;</td>
+                          <td>Br.Baturiti, Kec.Baturiti, Tabanan-Bali</td>
+                        </tr>
                       </tbody>
                     </table>
-                    <div class="card-body card-body-2 pt-0">
+                    <div class="card-body card-body-2">
                       <h6 class="card-title">Internal notes &#58;</h6>
                       <div class="card-text">coba</div>
                     </div>
 
                     <div class="card-body btn-card">
                       <a
-                        class="btn btn-primary me-2 mt-2"
-                        href="#"
+                        class="btn btn-secondary me-2"
+                        href="persons.html"
                         role="button"
-                        >EDIT</a
-                      >
+                        ><ion-icon name="arrow-back-sharp"></ion-icon
+                      ></a>
+
                       <a
-                        class="btn btn-secondary me-2 mt-2"
-                        href="#"
+                        class="btn btn-primary me-2"
+                        href="edit.html"
                         role="button"
-                        >CANCEL</a
+                        ><ion-icon name="create"></ion-icon> EDIT</a
                       >
-                      <a class="btn btn-danger mt-2" href="#" role="button"
-                        >DELETE</a
+
+                      <button
+                        type="button"
+                        class="btn btn-danger"
+                        data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"
                       >
+                        <ion-icon name="trash"></ion-icon> DELETE
+                      </button>
+
+                      <!-- Modal -->
+                      <div
+                        class="modal fade"
+                        id="staticBackdrop"
+                        data-bs-backdrop="static"
+                        data-bs-keyboard="false"
+                        tabindex="-1"
+                        aria-labelledby="staticBackdropLabel"
+                        aria-hidden="true"
+                      >
+                        <div class="modal-dialog modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h1
+                                class="modal-title fs-5"
+                                id="staticBackdropLabel"
+                              >
+                                Delete Person
+                              </h1>
+                              <button
+                                type="button"
+                                class="btn-close"
+                                data-bs-dismiss="modal"
+                                aria-label="Close"
+                              ></button>
+                            </div>
+                            <div class="modal-body">
+                              Are you sure to delete this person?
+                            </div>
+                            <div class="modal-footer">
+                              <button
+                                type="button"
+                                class="btn btn-secondary"
+                                data-bs-dismiss="modal"
+                              >
+                                NO
+                              </button>
+                              <button type="button" class="btn btn-primary">
+                                YES
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                    <!-- <div class="card-body">
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                  </div> -->
                   </div>
                 </div>
               </div>

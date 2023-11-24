@@ -33,7 +33,7 @@
     <link href="Query/query.css" rel="stylesheet" />
     <link href="CSS/create.css" rel="stylesheet" />
 
-    <title>CREATE - Person Management App</title>
+    <title>EDIT - Person Management App</title>
   </head>
   <body>
     <header class="header-section">
@@ -204,7 +204,7 @@
         <div class="main-content">
           <div class="create m-3 m-md-4">
             <div class="content-title">
-              <h2 class="heading-2 m-0 p-3">ADD PERSON</h2>
+              <h2 class="heading-2 m-0 p-3">EDIT PERSON</h2>
             </div>
 
             <div class="row justify-content-center">
@@ -212,7 +212,7 @@
               <div class="col-12">
                 <form class="create-form needs-validation p-4 mb-5">
                   <h5 class="form-text pb-2 mb-4">
-                    Add new person data in the form below:
+                    Edit person data in the form below:
                   </h5>
                   <div class="d-lg-flex gap-lg-3 gap-xl-5">
                     <div class="form-1">
@@ -226,6 +226,7 @@
                           type="text"
                           class="form-control"
                           placeholder="first name"
+                          value="Lala"
                           aria-label="First name"
                           required
                         />
@@ -242,11 +243,12 @@
                           type="text"
                           class="form-control"
                           placeholder="last name"
+                          value="Lulu"
                           aria-label="Last name"
                           required
                         />
                       </div>
-
+                      Document
                       <div class="mb-3">
                         <label for="nikInput" class="form-label"
                           >NIK &#42;</label
@@ -256,6 +258,7 @@
                           type="number"
                           class="form-control"
                           placeholder="Nomor Induk Kependudukan"
+                          value="1001267392823094"
                           aria-label="NIK"
                           required
                         />
@@ -271,6 +274,7 @@
                           id="exampleInputEmail1"
                           aria-describedby="emailHelp"
                           placeholder="name@example.com"
+                          value="lalagemoy@gmail.com"
                           required
                         />
                       </div>
@@ -283,6 +287,7 @@
                           class="form-control"
                           id="exampleInputPassword1"
                           placeholder="password"
+                          value="1234567890"
                           required
                         />
                       </div>
@@ -311,9 +316,8 @@
                           aria-label="Default select example"
                           required
                         >
-                          <option selected>choose...</option>
+                          <option selected>Female</option>
                           <option class="option-value" value="1">Male</option>
-                          <option class="option-value" value="2">Female</option>
                         </select>
                       </div>
 
@@ -326,6 +330,7 @@
                           type="text"
                           class="form-control"
                           placeholder="address"
+                          value="Br.Baturiti, Kec.Baturiti Tabanan-Bali"
                           aria-label="Last name"
                           required
                         />
@@ -353,8 +358,7 @@
                           class="form-select"
                           aria-label="Default select example"
                         >
-                          <option selected>choose...</option>
-                          <option class="option-value" value="1">Admin</option>
+                          <option selected>Admin</option>
                           <option class="option-value" value="2">Member</option>
                         </select>
                         <div class="invalid-feedback">
@@ -384,12 +388,13 @@
                   <div class="row justify-content-center mt-5">
                     <div class="col-12">
                       <div class="btn-create">
-                        <button
+                        <a
                           type="submit"
+                          href="view.html"
                           class="btn btn-primary btn-save me-3"
                         >
                           Save
-                        </button>
+                        </a>
                         <button
                           type="reset"
                           class="btn btn-secondary btn-cancel"

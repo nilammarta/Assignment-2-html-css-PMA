@@ -17,8 +17,8 @@
 
 .create-form {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-  /* background-color: #fefefe; */
   background-color: #f8f7fd;
+  border-radius: 11px;
 }
 
 .create-form input,
@@ -45,13 +45,13 @@
   border: none;
 }
 
-/* .btn-create {
-  margin-top: 5.6rem;
-} */
+.btn-create {
+  margin-top: 2rem;
+}
 
 .btn-save,
 .btn-cancel {
-  padding: 1rem 1.2rem;
+  padding: 0.8rem 1.2rem;
 }
 
 .form-1,
