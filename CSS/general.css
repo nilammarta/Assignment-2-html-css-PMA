@@ -62,21 +62,26 @@ body {
 .header {
   padding: 0.5rem 1.2rem;
   margin: 0 1rem;
-  color: #5900cc;
+  /* color: #5900cc; */
+  color: #6f2da8;
   line-height: 1.05;
   font-weight: 700;
   letter-spacing: -0.5px;
   /* margin-bottom: 1rem; */
 }
 
-.btn-header {
-  color: #5900cc;
+.logo-img {
+  height: 3rem;
+  width: 3rem;
+  /* height: 4rem;
+  width: 4rem; */
 }
 
 .icon-menu {
   height: 3rem;
   width: 3rem;
-  color: #5900cc;
+  /* color: #5900cc; */
+  color: #6f2da8;
 }
 
 .user-box {
@@ -103,7 +108,7 @@ body {
 }
 
 .offcanvas-header {
-  padding: 1rem 2.2rem;
+  padding: 0.5rem 1.2rem;
   border-bottom: 2px solid #c9b8ed;
 }
 
@@ -152,14 +157,6 @@ body {
   border-radius: 7px;
   margin-bottom: 3.5rem;
 }
-
-/* .main-section {
-  position: fixed;
-  top: 72px;
-  bottom: 0;
-  left: 0;
-  right: 0;
-} */
 
 /* NAVIGATION */
 .nav-open {

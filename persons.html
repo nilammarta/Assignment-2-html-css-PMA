@@ -29,6 +29,80 @@
       src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
     ></script>
 
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
     <link href="CSS/general.css" rel="stylesheet" />
     <link href="CSS/persons.css" rel="stylesheet" />
     <link href="Query/query.css" rel="stylesheet" />
@@ -39,8 +113,13 @@
     <header class="header-section">
       <div class="header">
         <div class="d-flex justify-content-between align-items-center">
-          <div class="logo-box">
-            <h2 class="heading-2 m-0">PERMAP</h2>
+          <div class="logo-box d-flex align-items-center gap-2">
+            <img
+              class="logo-img"
+              src="Img/Permap-logo-2.png"
+              alt="permap logo"
+            />
+            <h5 class="heading-2 logo-text m-0">PERMAP</h5>
           </div>
 
           <div class="d-flex justify-content-end align-items-center">
@@ -65,12 +144,17 @@
                 aria-labelledby="offcanvasScrollingLabel"
               >
                 <div class="offcanvas-header">
-                  <h2
+                  <img
+                    class="logo-img"
+                    src="Img/Permap-logo-2.png"
+                    alt="permap logo"
+                  />
+                  <h5
                     class="offcanvas-title heading-2 m-0"
                     id="offcanvasScrollingLabel"
                   >
                     PERMAP
-                  </h2>
+                  </h5>
                   <button
                     class="btn--close"
                     type="button"
@@ -92,7 +176,7 @@
                         >
                       </li>
                       <li class="nav-item nav-open">
-                        <a class="main-nav-link" href="#"
+                        <a class="main-nav-link" href="persons.html"
                           ><ion-icon
                             name="people-outline"
                             class="nav-icon"
@@ -202,8 +286,6 @@
         </div>
 
         <div class="main-content">
-          <!-- <div class="row justify-content-center">
-            <div class="col-12"> -->
           <div class="persons m-3 m-md-4">
             <nav class="navbar bg-body-tertiary p-0">
               <div class="container-fluid nav p-0">
@@ -223,6 +305,7 @@
                     </button>
                   </div>
 
+                  <!-- dropdown filter person -->
                   <div class="dropdown me-4">
                     <button
                       class="btn btn-secondary dropdown-toggle btn-dropdown"
@@ -253,6 +336,7 @@
               </div>
             </nav>
 
+            <!-- add -->
             <div class="d-flex">
               <button
                 class="table-btn btn-primary btn-lg btn-add p-3 mt-5"
@@ -269,6 +353,7 @@
               </button>
             </div>
 
+            <!-- table -->
             <div class="table-data mt-4">
               <div class="table-responsive">
                 <table class="table table-hover">
@@ -361,15 +446,16 @@
                               name="eye-sharp"
                             ></ion-icon>
                           </a>
-                          <button
+                          <a
                             class="btn btn-outline-light btn-table"
                             type="button"
+                            href="edit.html"
                           >
                             <ion-icon
                               class="btn-icon"
                               name="create-sharp"
                             ></ion-icon>
-                          </button>
+                          </a>
                         </div>
                       </td>
                     </tr>
@@ -391,15 +477,16 @@
                               name="eye-sharp"
                             ></ion-icon>
                           </a>
-                          <button
+                          <a
                             class="btn btn-outline-light btn-table"
                             type="button"
+                            href="edit.html"
                           >
                             <ion-icon
                               class="btn-icon"
                               name="create-sharp"
                             ></ion-icon>
-                          </button>
+                          </a>
                         </div>
                       </td>
                     </tr>
@@ -421,12 +508,109 @@
                               name="eye-sharp"
                             ></ion-icon>
                           </a>
-                          <button class="btn btn-light btn-table" type="button">
+                          <a
+                            class="btn btn-light btn-table"
+                            type="button"
+                            href="edit.html"
+                          >
                             <ion-icon
                               class="btn-icon"
                               name="create-sharp"
                             ></ion-icon>
-                          </button>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">6</td>
+                      <td>kuki@gmail.com</td>
+                      <td>Kuka Kuki</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div class="d-grid gap-2 d-flex justify-content-md-end">
+                          <a
+                            class="btn btn-light me-md-2 btn-table"
+                            type="button"
+                            href="view.html"
+                            role="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="eye-sharp"
+                            ></ion-icon>
+                          </a>
+                          <a
+                            class="btn btn-light btn-table"
+                            type="button"
+                            href="edit.html"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="create-sharp"
+                            ></ion-icon>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">7</td>
+                      <td>kuki@gmail.com</td>
+                      <td>Kuka Kuki</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div class="d-grid gap-2 d-flex justify-content-md-end">
+                          <a
+                            class="btn btn-light me-md-2 btn-table"
+                            type="button"
+                            href="view.html"
+                            role="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="eye-sharp"
+                            ></ion-icon>
+                          </a>
+                          <a
+                            class="btn btn-light btn-table"
+                            type="button"
+                            href="edit.html"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="create-sharp"
+                            ></ion-icon>
+                          </a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td scope="row">8</td>
+                      <td>kuki@gmail.com</td>
+                      <td>Kuka Kuki</td>
+                      <td>MEMBER</td>
+                      <td>
+                        <div class="d-grid gap-2 d-flex justify-content-md-end">
+                          <a
+                            class="btn btn-light me-md-2 btn-table"
+                            type="button"
+                            href="view.html"
+                            role="button"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="eye-sharp"
+                            ></ion-icon>
+                          </a>
+                          <a
+                            class="btn btn-light btn-table"
+                            type="button"
+                            href="edit.html"
+                          >
+                            <ion-icon
+                              class="btn-icon"
+                              name="create-sharp"
+                            ></ion-icon>
+                          </a>
                         </div>
                       </td>
                     </tr>
@@ -434,15 +618,13 @@
                 </table>
               </div>
             </div>
-            <!-- </div>
-            </div> -->
 
             <!-- Pagination -->
             <div class="page">
-              <nav aria-label="...">
+              <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-center">
                   <li class="page-item">
-                    <a class="page-link"
+                    <a class="page-link" href="#"
                       ><ion-icon
                         class="page-icon"
                         name="caret-back-outline"
